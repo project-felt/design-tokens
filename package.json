@@ -1,0 +1,40 @@
+{
+  "name": "felt-design-tokens",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "wireit"
+  },
+  "dependencies": {
+    "style-dictionary": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.0",
+    "typescript": "^7.0.2",
+    "wireit": "^0.14.13"
+  },
+  "wireit": {
+    "typecheck": {
+      "command": "tsc --noEmit",
+      "files": ["pipeline/**/*.ts", "tsconfig.json"],
+      "output": []
+    },
+    "compile": {
+      "command": "tsc",
+      "files": ["pipeline/**/*.ts", "tsconfig.json"],
+      "output": ["pipeline/**/*.js"]
+    },
+    "generate": {
+      "command": "node sd.config.js",
+      "dependencies": ["compile"],
+      "files": ["src/**/*.json", "sd.config.js", "pipeline/**/*.ts"],
+      "output": ["dist/**"]
+    },
+    "build": {
+      "command": "echo Build complete",
+      "dependencies": ["typecheck", "generate"],
+      "output": []
+    }
+  }
+}
