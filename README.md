@@ -47,12 +47,8 @@ references, Figma `aliasData`, and Figma composed-color aliases.
 
 ```text
 dist/css/
-├── global.css             # Combined Token layers
-├── primitive.css          # @layer primitive
-└── scheme/
-    ├── light.css          # @layer semantic.light, -on-light tokens
-    ├── dark.css           # @layer semantic.dark, -on-dark tokens
-    └── scheme.css         # Both semantic layers and @layer scheme
+├── global.css             # Primitive, semantic, and scheme layers
+└── primitive.css          # @layer primitive
 ```
 
 Use `global.css` when the application needs the complete token set:
@@ -79,9 +75,9 @@ Primitive tokens are available as `--felt-*` custom properties:
 }
 ```
 
-When a semantic token aliases a primitive token, the standalone scheme
-declarations keep that relationship and include the resolved value as a
-fallback. The equivalent declarations in `global.css` omit the fallback:
+When a semantic token aliases a primitive token, the temporary scheme
+declarations preserve that relationship and include the resolved value as a
+fallback. The declarations written to `global.css` omit the fallback:
 
 ```css
 --felt-color-brand-primary-on-dark: var(--felt-color-red-50, #ee0000);
@@ -139,7 +135,7 @@ pipeline/
 └── css/
     ├── primitive.ts         # Primitive layer
     ├── semantic.ts          # Light and dark scheme layers
-    └── post-process.ts      # Combined scheme.css and global.css
+    └── post-process.ts      # Combines temporary scheme layers into global.css
 ```
 
 The JavaScript files generated beside these TypeScript sources are build

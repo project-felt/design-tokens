@@ -44,14 +44,14 @@ const config = (
 
 export const semanticLight = config(
   'src/semantic.light.tokens.json',
-  'scheme/light.css',
+  '.scheme/light.css',
   'semantic.light',
   '-on-light',
 );
 
 export const semanticDark = config(
   'src/semantic.dark.tokens.json',
-  'scheme/dark.css',
+  '.scheme/dark.css',
   'semantic.dark',
   '-on-dark',
 );

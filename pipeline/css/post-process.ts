@@ -1,8 +1,8 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, rmSync, writeFileSync } from 'node:fs';
 
 /**
- * Combines the generated primitive and scheme layers into scheme.css and the
- * complete global.css entrypoint, adding unsuffixed light-dark() tokens.
+ * Combines temporary scheme layers into the complete global.css entrypoint,
+ * adding unsuffixed light-dark() tokens before removing the intermediates.
  */
 
 const header = '/**\n * Do not edit directly, this file was auto-generated.\n */\n\n';
@@ -73,16 +73,16 @@ function schemeLayer(light: string, dark: string): string {
  */
 export function postProcess(): void {
   const primitive = stripHeader(read('./dist/css/primitive.css'));
-  const light = stripHeader(read('./dist/css/scheme/light.css'));
-  const dark = stripHeader(read('./dist/css/scheme/dark.css'));
+  const light = stripHeader(read('./dist/css/.scheme/light.css'));
+  const dark = stripHeader(read('./dist/css/.scheme/dark.css'));
   const scheme = schemeLayer(light, dark);
   const combined = `${header}@layer semantic.light, semantic.dark, scheme;\n\n${light}\n${dark}\n${scheme}`;
   const combinedForGlobal = `${stripVariableFallbacks(light)}\n${stripVariableFallbacks(dark)}\n${scheme}`;
-
-  writeFileSync('./dist/css/scheme/scheme.css', combined);
 
   writeFileSync(
     './dist/css/global.css',
     `${header}@layer primitive, semantic.light, semantic.dark, scheme;\n\n${primitive}\n${combinedForGlobal}`,
   );
+
+  rmSync('./dist/css/.scheme', { recursive: true, force: true });
 }
