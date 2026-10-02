@@ -5,6 +5,7 @@ type Token = {
   $extensions?: Record<string, any>;
   original?: { $value?: unknown };
   name: string;
+  path?: string[];
 };
 
 type Dictionary = {
@@ -23,14 +24,33 @@ const header = [
   ' */',
 ].join('\n');
 
+const pixelLengthCategories = new Set([
+  'border/radius',
+  'border/width',
+  'effect/blur',
+  'effect/size',
+  'glyph/size',
+  'space',
+]);
+
+/**
+ * Identifies Figma number tokens whose values represent CSS lengths.
+ * @param token - Style Dictionary token being formatted.
+ * @returns Whether the numeric value should be suffixed with `px`.
+ */
+function hasPixelUnit(token: Token): boolean {
+  const category = token.path?.slice(1, -1).join('/');
+  return category !== undefined && pixelLengthCategories.has(category);
+}
+
 /**
  * Converts a DTCG value into a CSS-compatible value string.
  * @param value - Raw DTCG token value.
  * @returns A CSS value, including units or a color hex when available.
  */
-function rawCssValue(value: unknown): string {
+function rawCssValue(value: unknown, unit = ''): string {
   if (typeof value === 'string') return value;
-  if (typeof value === 'number') return String(value);
+  if (typeof value === 'number') return `${value}${unit}`;
 
   if (
     value &&
@@ -57,7 +77,7 @@ function rawCssValue(value: unknown): string {
  * @returns A CSS value with an optional resolved fallback.
  */
 function cssValue(token: Token, dictionary: Dictionary): string {
-  const fallback = rawCssValue(token.$value);
+  const fallback = rawCssValue(token.$value, hasPixelUnit(token) ? 'px' : '');
   const extensions = token.$extensions ?? {};
   const aliasName =
     extensions['com.figma.aliasData']?.targetVariableName ??
