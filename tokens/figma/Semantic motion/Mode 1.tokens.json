@@ -1,0 +1,143 @@
+{
+  "felt": {
+    "motion": {
+      "duration": {
+        "sm": {
+          "$type": "duration",
+          "$value": {
+            "value": 100,
+            "unit": "ms"
+          },
+          "$description": "Use to set the duration for short, simple animations. Always defer to more specific duration tokens (e.g., motion.duration.fade.short) before using this generic duration token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2209:3",
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:024a54b300eb9455b719cca7404d16976410ea37/-1:-1",
+              "targetVariableName": "felt/duration/10",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "md": {
+          "$type": "duration",
+          "$value": {
+            "value": 200,
+            "unit": "ms"
+          },
+          "$description": "Use to set the duration for standard animations. Always defer to more specific duration tokens (e.g., motion.duration.fade.default) before using this generic duration token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2209:4",
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:9d033317e04aa40a8f84d1a5e3f2e74c51c46702/-1:-1",
+              "targetVariableName": "felt/duration/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "fade": {
+          "default": {
+            "$type": "duration",
+            "$value": "{felt.motion.duration.md}",
+            "$description": "Use to set the default duration for fading or transitioning an element's background color and/or opacity. Default fades are for medium-sized elements traveling medium distances (e.g., toast alerts). For small, short-travel fades (e.g., buttons), use motion.duration.fade.short.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2209:5",
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          },
+          "short": {
+            "$type": "duration",
+            "$value": "{felt.motion.duration.sm}",
+            "$description": "Use to set a short duration for fading or transitioning an element's background color and/or opacity. Short fades are for small elements traveling short distances (e.g., buttons). For medium-distance fades (e.g., toasts), use motion.duration.fade.default.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2209:6",
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      },
+      "easing": {
+        "accelerate": {
+          "$type": "cubicBezier",
+          "$value": [
+            0.4,
+            0,
+            0.7,
+            0.2
+          ],
+          "$description": "Use to set the timing function for animations that start slowly and accelerate at the end (ease-in). Typically used when elements are collapsing or being removed. Do not use for elements entering a space; use motion.easing.decelerate. For general transitions, use motion.easing.default.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2209:7",
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:e16d7557959e5b9378c83da6d3862a4e1435cfde/-1:-1",
+              "targetVariableName": "felt/easing/10",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "default": {
+          "$type": "cubicBezier",
+          "$value": [
+            0.4,
+            0,
+            0.2,
+            1
+          ],
+          "$description": "Use to set the timing function for animations that start slowly, speed up, then end slowly (ease-in-out). This is the default motion curve. For exit/collapse motion, prefer motion.easing.accelerate. For enter/expand motion, prefer motion.easing.decelerate.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2209:8",
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:d45877c1eb4c9bfa7d18e235a847db7f3199c0bd/-1:-1",
+              "targetVariableName": "felt/easing/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "decelerate": {
+          "$type": "cubicBezier",
+          "$value": [
+            0,
+            0,
+            0.2,
+            1
+          ],
+          "$description": "Use to set the timing function for animations that start quickly and decelerate at the end (ease-out). Typically used when elements are expanding or transitioning into a space. Do not use for collapsing or removal; use motion.easing.accelerate.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2209:9",
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:0ef3a4185db2a5daf8039fefbd00590bb0ff648f/-1:-1",
+              "targetVariableName": "felt/easing/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Mode 1"
+  }
+}
