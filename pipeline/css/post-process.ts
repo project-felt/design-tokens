@@ -1,17 +1,6 @@
 import { readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { header, layerOrder } from '../formats.js';
 
-/**
- * Combines temporary scheme layers into the complete global.css entrypoint,
- * adding unsuffixed light-dark() tokens before removing the intermediates.
- */
-
-const header = '/**\n * Do not edit directly, this file was auto-generated.\n */\n\n';
-
-/**
- * Reads a generated CSS file as UTF-8 text.
- * @param file - Path to the generated CSS file.
- * @returns The file contents.
- */
 const read = (file: string): string => readFileSync(file, 'utf8');
 
 /**
@@ -19,25 +8,17 @@ const read = (file: string): string => readFileSync(file, 'utf8');
  * @param content - Generated CSS content.
  * @returns CSS content without the generated header.
  */
-const stripHeader = (content: string): string => content.replace(/\/\*\*[\s\S]*?\*\/\n\n/, '');
-
-/**
- * Removes fallback values from CSS variable references for global output.
- * @param content - CSS containing variable references with optional fallbacks.
- * @returns CSS with `var(--name, fallback)` reduced to `var(--name)`.
- */
-const stripVariableFallbacks = (content: string): string =>
-  content.replace(/var\((--[^,()]+),\s*(?:[^()]|\([^()]*\))*\)/g, 'var($1)');
+const stripHeader = (content: string): string =>
+  content.replace(/^\/\*\*[\s\S]*?\*\/\n\n/, '').trim();
 
 type Declaration = { name: string; value: string };
 
 /**
  * Extracts CSS custom-property declarations from generated CSS.
  * @param content - CSS containing custom-property declarations.
- * @returns Parsed custom-property names and values.
+ * @returns Parsed custom-property names.
  */
 function declarations(content: string): Declaration[] {
-  // Extract each indented CSS custom-property declaration: --name: value;
   return [...content.matchAll(/^\s+--([^:]+):\s*(.+);$/gm)].map(([, name, value]) => ({
     name,
     value,
@@ -53,14 +34,14 @@ function declarations(content: string): Declaration[] {
  */
 function schemeLayer(light: string, dark: string): string {
   const darkByBase = new Map(
-    declarations(dark).map(({ name, value }) => [name.replace(/-on-dark$/, ''), { name, value }]),
+    declarations(dark).map(({ name }) => [name.replace(/-on-dark$/, ''), name]),
   );
   const vars = declarations(light)
     .map(({ name }) => {
       const base = name.replace(/-on-light$/, '');
-      const darkToken = darkByBase.get(base);
-      if (!darkToken) return null;
-      return `    --${base}: light-dark(var(--${name}), var(--${darkToken.name}));`;
+      const darkName = darkByBase.get(base);
+      if (!darkName) return null;
+      return `    --${base}: light-dark(var(--${name}), var(--${darkName}));`;
     })
     .filter((value): value is string => value !== null);
 
@@ -68,21 +49,22 @@ function schemeLayer(light: string, dark: string): string {
 }
 
 /**
- * Combines generated layers into the standalone scheme and global CSS files.
+ * Combines generated base layers into `global.css`.
  * @returns Nothing. Writes generated files to `dist/css/`.
  */
 export function postProcess(): void {
-  const primitive = stripHeader(read('./dist/css/primitive.css'));
+  const primitive = stripHeader(read('./dist/css/.layers/primitive.css'));
+  const unit = stripHeader(read('./dist/css/.layers/unit.css'));
+  const motion = stripHeader(read('./dist/css/.layers/motion.css'));
   const light = stripHeader(read('./dist/css/.scheme/light.css'));
   const dark = stripHeader(read('./dist/css/.scheme/dark.css'));
   const scheme = schemeLayer(light, dark);
-  const combined = `${header}@layer semantic.light, semantic.dark, scheme;\n\n${light}\n${dark}\n${scheme}`;
-  const combinedForGlobal = `${stripVariableFallbacks(light)}\n${stripVariableFallbacks(dark)}\n${scheme}`;
 
   writeFileSync(
     './dist/css/global.css',
-    `${header}@layer primitive, semantic.light, semantic.dark, scheme;\n\n${primitive}\n${combinedForGlobal}`,
+    `${header}\n\n@layer ${layerOrder};\n\n${primitive}\n\n${unit}\n\n${motion}\n\n${light}\n\n${dark}\n\n${scheme}`,
   );
 
+  rmSync('./dist/css/.layers', { recursive: true, force: true });
   rmSync('./dist/css/.scheme', { recursive: true, force: true });
 }

@@ -1,111 +1,104 @@
 import StyleDictionary from 'style-dictionary';
+import {
+  collectionKey,
+  cssName,
+  cssValue,
+  isFigmaOnly,
+  tokenKey,
+  type Token,
+  type TokenIndex,
+} from './tokens.js';
 
-type Token = {
-  $value?: unknown;
-  $extensions?: Record<string, any>;
-  original?: { $value?: unknown };
-  name: string;
-  path?: string[];
-};
-
-type Dictionary = {
-  allTokens: Token[];
-  unfilteredTokenMap: Map<string, Token>;
-};
-
-type FormatOptions = {
-  layerName: string;
-  nameSuffix?: string;
-};
-
-const header = [
+export const header = [
   '/**',
   ' * Do not edit directly, this file was auto-generated.',
   ' */',
 ].join('\n');
 
-const pixelLengthCategories = new Set([
-  'border/radius',
-  'border/width',
-  'effect/blur',
-  'effect/size',
-  'glyph/size',
-  'space',
-]);
+export const layerOrder = 'primitive, semantic, scheme, density, mode';
+
+let index: TokenIndex | undefined;
 
 /**
- * Identifies Figma number tokens whose values represent CSS lengths.
- * @param token - Style Dictionary token being formatted.
- * @returns Whether the numeric value should be suffixed with `px`.
+ * Sets the token index used by the registered formatter.
+ * @param value - Parsed token index.
  */
-function hasPixelUnit(token: Token): boolean {
-  const category = token.path?.slice(1, -1).join('/');
-  return category !== undefined && pixelLengthCategories.has(category);
+export function setTokenIndex(value: TokenIndex): void {
+  index = value;
 }
 
-/**
- * Converts a DTCG value into a CSS-compatible value string.
- * @param value - Raw DTCG token value.
- * @returns A CSS value, including units or a color hex when available.
- */
-function rawCssValue(value: unknown, unit = ''): string {
-  if (typeof value === 'string') return value;
-  if (typeof value === 'number') return `${value}${unit}`;
+type FormatOptions = {
+  layerName: string;
+  nameSuffix?: string;
+  collection: string;
+  mode: string;
+  groupBy?: number;
+};
 
-  if (
-    value &&
-    typeof value === 'object' &&
-    'value' in value &&
-    typeof value.value === 'number' &&
-    'unit' in value &&
-    typeof value.unit === 'string'
-  ) {
-    return `${value.value}${value.unit}`;
-  }
-
-  if (value && typeof value === 'object' && 'hex' in value && typeof value.hex === 'string') {
-    return value.hex;
-  }
-
-  return JSON.stringify(value) ?? '';
-}
+type Declaration = { path: string[]; declaration: string };
 
 /**
- * Formats a token value, preserving DTCG and Figma aliases as CSS variables.
- * @param token - Style Dictionary token being formatted.
- * @param dictionary - Dictionary used to resolve DTCG references.
- * @returns A CSS value with an optional resolved fallback.
- */
-function cssValue(token: Token, dictionary: Dictionary): string {
-  const fallback = rawCssValue(token.$value, hasPixelUnit(token) ? 'px' : '');
-  const extensions = token.$extensions ?? {};
-  const aliasName =
-    extensions['com.figma.aliasData']?.targetVariableName ??
-    extensions['com.figma.composedColor']?.colorArg?.alias?.targetVariableName;
-  if (aliasName) return `var(--${aliasName.replaceAll('/', '-')}, ${fallback})`;
-
-  const reference = token.original?.$value;
-  if (typeof reference === 'string' && /^\{.+\}$/.test(reference)) {
-    const referencedToken = dictionary.unfilteredTokenMap.get(reference);
-    if (referencedToken) return `var(--${referencedToken.name}, ${fallback})`;
-  }
-
-  return fallback;
-}
-
-/**
- * Formats all tokens as custom properties inside a named CSS layer.
+ * Formats tokens as custom properties inside a named CSS layer. When
+ * `groupBy` is set, declarations are split into sublayers named after the
+ * first N path segments (for example `semantic.border-radius`).
  * @param args - Style Dictionary formatter arguments.
  * @returns Generated CSS for the configured layer.
  */
 function layerFormat({ dictionary, options }: any): string {
-  const suffix = options.nameSuffix ?? '';
-  const vars = dictionary.allTokens
-    .map((token: Token) => `    --${token.name}${suffix}: ${cssValue(token, dictionary)};`)
-    .join('\n');
+  if (!index) throw new Error('Token index has not been initialised');
 
-  return `${header}\n\n@layer ${options.layerName} {\n  :root {\n${vars}\n  }\n}\n`;
+  const {
+    layerName,
+    nameSuffix = '',
+    collection,
+    mode,
+    groupBy,
+  } = options as FormatOptions;
+  const scoped = index.collections.get(collectionKey(collection, mode));
+
+  const entries: Declaration[] = dictionary.allTokens
+    .map((token: { path: string[] }): Declaration | null => {
+      const path = token.path.map(String).filter((segment) => segment !== '$root');
+      if (isFigmaOnly(path)) return null;
+
+      const key = tokenKey(path);
+      const raw: Token | undefined = scoped?.byPath.get(key) ?? index?.primitive?.byPath.get(key);
+      if (!raw) {
+        throw new Error(`No parsed token for ${collection}/${mode} ${key}`);
+      }
+      return {
+        path,
+        declaration: `    --${cssName(path)}${nameSuffix}: ${cssValue(raw, index!)};`,
+      };
+    })
+    .filter((entry: Declaration | null): entry is Declaration => entry !== null);
+
+  if (!groupBy) {
+    const declarations = entries.map((entry) => entry.declaration).join('\n');
+    return `${header}\n\n@layer ${layerName} {\n  :root {\n${declarations}\n  }\n}\n`;
+  }
+
+  const groups = new Map<string, string[]>();
+  for (const entry of entries) {
+    const group = entry.path.slice(1, 1 + groupBy).join('-') || layerName;
+    const lines = groups.get(group) ?? [];
+    lines.push(entry.declaration);
+    groups.set(group, lines);
+  }
+
+  const blocks = [...groups.keys()].sort().map((group) => {
+    const lines = groups.get(group) ?? [];
+    return `@layer ${layerName}.${group} {\n  :root {\n${lines.join('\n')}\n  }\n}`;
+  });
+
+  return `${header}\n\n${blocks.join('\n\n')}\n`;
 }
+
+StyleDictionary.registerTransform({
+  name: 'name/felt',
+  type: 'name',
+  transform: (token: { path: string[] }) => cssName(token.path.map(String)),
+});
 
 StyleDictionary.registerFormat({
   name: 'css/layer',

@@ -1,0 +1,1610 @@
+{
+  "felt": {
+    "space": {
+      "fluid": {
+        "xxs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 3,
+            "unit": "px"
+          },
+          "$description": "Use to set extra-extra small padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:324",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1c1a3662ac2a603c86be7ca21bc22bffcfcbf053/-1:-1",
+              "targetVariableName": "felt/space/15",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 4,
+            "unit": "px"
+          },
+          "$description": "Use to set extra small padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:325",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:b2bf68bac412f754cef3ce8d1fa74305597d77b2/-1:-1",
+              "targetVariableName": "felt/space/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "$description": "Use to set small padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:326",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:0189d078ea56ca94cb489db027001abfef04160f/-1:-1",
+              "targetVariableName": "felt/space/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Use to set medium padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:327",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:13bbc207d1018679ccb8d160355600979c4f1c6d/-1:-1",
+              "targetVariableName": "felt/space/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": {
+            "value": 24,
+            "unit": "px"
+          },
+          "$description": "Use to set large padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:328",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:78fa542dd9a5750bd36389f9c3543e39f8cfc550/-1:-1",
+              "targetVariableName": "felt/space/50",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:329",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:fb680cdc871d2a69147aa1595f0ef84927c4aebc/-1:-1",
+              "targetVariableName": "felt/space/60",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xxl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 48,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3258:279",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:127bd4727d3810951d71db375f4ff74d9569d08d/-1:-1",
+              "targetVariableName": "felt/space/70",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      },
+      "fixed": {
+        "xxs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 2,
+            "unit": "px"
+          },
+          "$description": "Use to set extra-extra small padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3258:272",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:d5ac1db69169dcac8d52f116c77ee85d8b479d9b/-1:-1",
+              "targetVariableName": "felt/space/10",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 4,
+            "unit": "px"
+          },
+          "$description": "Use to set extra small padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3258:273",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:b2bf68bac412f754cef3ce8d1fa74305597d77b2/-1:-1",
+              "targetVariableName": "felt/space/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "$description": "Use to set small padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3258:274",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:0189d078ea56ca94cb489db027001abfef04160f/-1:-1",
+              "targetVariableName": "felt/space/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Use to set medium padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3258:275",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:13bbc207d1018679ccb8d160355600979c4f1c6d/-1:-1",
+              "targetVariableName": "felt/space/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": {
+            "value": 24,
+            "unit": "px"
+          },
+          "$description": "Use to set large padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3258:276",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:78fa542dd9a5750bd36389f9c3543e39f8cfc550/-1:-1",
+              "targetVariableName": "felt/space/50",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3258:277",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:fb680cdc871d2a69147aa1595f0ef84927c4aebc/-1:-1",
+              "targetVariableName": "felt/space/60",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xxl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 48,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large padding within elements or spacing between elements. Always check to see if a more specific space token exists (e.g., space.gap.* or space.interactive.*) before applying this generic space token.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3258:278",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:127bd4727d3810951d71db375f4ff74d9569d08d/-1:-1",
+              "targetVariableName": "felt/space/70",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      },
+      "gap": {
+        "text-to-element": {
+          "$type": "dimension",
+          "$value": {
+            "value": 6,
+            "unit": "px"
+          },
+          "$description": "Use to set the inline (horizontal) gap between text and adjacent elements such as avatars, icons, and badges. Do not use for vertical (block) spacing. Do not use as generic padding between unrelated layout regions; use space.xxs through space.xl if no purpose-specific gap token applies (space.gap.*, space.interactive.*).",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:330",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:3f4765e98ac819b5531ccf5a98a702ab1172f63f/-1:-1",
+              "targetVariableName": "felt/space/25",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "interactive-to-interactive": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Use to set the gap between two interactive elements, such as buttons in an action group. Do not use for padding inside a single control; use space.interactive.* instead.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:331",
+            "com.figma.scopes": [
+              "GAP"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:13bbc207d1018679ccb8d160355600979c4f1c6d/-1:-1",
+              "targetVariableName": "felt/space/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      },
+      "interactive": {
+        "vertical": {
+          "$type": "dimension",
+          "$value": "{felt.space.fluid.sm}",
+          "$description": "Use to set the vertical (block) padding for all interactive elements, including both controls and actions, so their heights stay consistent. Do not use for horizontal padding; use space.interactive.horizontal.* instead.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:332",
+            "com.figma.scopes": [
+              "GAP"
+            ]
+          }
+        },
+        "horizontal": {
+          "action": {
+            "$type": "dimension",
+            "$value": "{felt.space.fluid.lg}",
+            "$description": "Use to set the horizontal (inline) padding for interactive action elements such as buttons and CTAs. Do not use for form controls; use space.interactive.horizontal.control. Do not use for subtle items such as tabs; use space.interactive.horizontal.subtle.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:333",
+              "com.figma.scopes": [
+                "GAP"
+              ]
+            }
+          },
+          "control": {
+            "$type": "dimension",
+            "$value": "{felt.space.fluid.md}",
+            "$description": "Use to set the horizontal (inline) padding for interactive control elements such as input fields and select menu toggles. Typically paired with color.fill.interactive.control.*. Do not use for buttons or CTAs; use space.interactive.horizontal.action.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:334",
+              "com.figma.scopes": [
+                "GAP"
+              ]
+            }
+          },
+          "subtle": {
+            "$type": "dimension",
+            "$value": "{felt.space.fluid.sm}",
+            "$description": "Use to set the horizontal (inline) padding for subtle interactive elements such as plain icon buttons, navigation items, tabs, and jump links. Typically paired with color.fill.interactive.subtle.*. Do not use for primary buttons; use space.interactive.horizontal.action.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:335",
+              "com.figma.scopes": [
+                "GAP"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "thin": {
+          "$type": "dimension",
+          "$value": {
+            "value": 1,
+            "unit": "px"
+          },
+          "$description": "Use to set a thin border width on at least one side of a container. This is the default width for borders and lines (e.g., dividers, cards, static containers). Do not use for strong directional emphasis such as a selected state; use border.width.thicker, border.width.thickest, border.width.interactive.hover, or border.width.interactive.selected.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:336",
+            "com.figma.scopes": [
+              "STROKE_FLOAT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:599c0db7f84ba48df443cf8d88beb36c02b99af2/-1:-1",
+              "targetVariableName": "felt/border/width/10",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "thick": {
+          "$type": "dimension",
+          "$value": {
+            "value": 2,
+            "unit": "px"
+          },
+          "$description": "Use to set a thick border width on at least one side of a container when you need more emphasis than a thin border (e.g., alerts, progress steppers). Do not use as the default static border; use border.width.thin. For selected navigation-style accents, prefer border.width.thicker or border.width.thickest.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:337",
+            "com.figma.scopes": [
+              "STROKE_FLOAT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:5ca54a6e11653da665b76a4715056e03fb150085/-1:-1",
+              "targetVariableName": "felt/border/width/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "thicker": {
+          "$type": "dimension",
+          "$value": {
+            "value": 3,
+            "unit": "px"
+          },
+          "$description": "Use to set a very thick border width on one side of a container for strong directional emphasis (e.g., a branded accent for the current page, expanded, or selected state on jump links, navigation, or tabs). Do not apply to all four sides as a default border; use border.width.thin.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:338",
+            "com.figma.scopes": [
+              "STROKE_FLOAT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:ea99ad141669f96012f15d05512e73ad72c53ec3/-1:-1",
+              "targetVariableName": "felt/border/width/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "thickest": {
+          "$type": "dimension",
+          "$value": {
+            "value": 4,
+            "unit": "px"
+          },
+          "$description": "Use to set the heaviest border width on one side of a container for strong directional emphasis (e.g., selected jump links, navigation, or tabs) when thicker is not enough. Do not apply to all four sides as a default border; use border.width.thin.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:339",
+            "com.figma.scopes": [
+              "STROKE_FLOAT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:bc484ea03b19851c9cfa6e9c3c9f9977e0b6dd60/-1:-1",
+              "targetVariableName": "felt/border/width/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "interactive": {
+          "focus": {
+            "ring": {
+              "$type": "dimension",
+              "$value": "{felt.border.width.thicker}",
+              "$description": "Use to set the heaviest border width on one side of a container for strong directional emphasis (e.g., selected jump links, navigation, or tabs) when thicker is not enough. Do not apply to all four sides as a default border; use border.width.thin.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:3049:1326",
+                "com.figma.scopes": [
+                  "STROKE_FLOAT"
+                ]
+              }
+            },
+            "$root": {
+              "$type": "dimension",
+              "$value": "{felt.border.width.thick}",
+              "$description": "Use to set the border width of bordered interactive elements in their selected or active state (e.g., secondary buttons, form inputs, menu toggles). Do not use for the default rest state; use border.width.interactive.default. Do not use for hover; use border.width.interactive.hover.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2721:239",
+                "com.figma.scopes": [
+                  "STROKE_FLOAT"
+                ]
+              }
+            }
+          },
+          "default": {
+            "$type": "dimension",
+            "$value": "{felt.border.width.thin}",
+            "$description": "Use to set the border width of bordered interactive elements in their default state (e.g., secondary buttons, form inputs, menu toggles). Do not use for hover or selected interactive widths; use border.width.interactive.hover or border.width.interactive.selected.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:340",
+              "com.figma.scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          },
+          "hover": {
+            "$type": "dimension",
+            "$value": "{felt.border.width.thick}",
+            "$description": "Use to set the border width of bordered interactive elements in their hovered state (e.g., secondary buttons, form inputs, menu toggles). Use this so hover is discernible by more than color alone per WCAG. Do not use for the default rest state; use border.width.interactive.default.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:341",
+              "com.figma.scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          },
+          "selected": {
+            "$type": "dimension",
+            "$value": "{felt.border.width.thick}",
+            "$description": "Use to set the border width of bordered interactive elements in their selected or active state (e.g., secondary buttons, form inputs, menu toggles). Do not use for the default rest state; use border.width.interactive.default. Do not use for hover; use border.width.interactive.hover.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:342",
+              "com.figma.scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          },
+          "pressed": {
+            "$type": "dimension",
+            "$value": "{felt.border.width.thick}",
+            "$description": "Use to set the border width of bordered interactive elements in their pressed state (e.g., secondary buttons, form inputs, menu toggles). Use this so hover is discernible by more than color alone per WCAG. Do not use for the default rest state; use border.width.interactive.default.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2687:2105",
+              "com.figma.scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          }
+        }
+      },
+      "radius": {
+        "sharp": {
+          "$type": "dimension",
+          "$value": {
+            "value": 0,
+            "unit": "px"
+          },
+          "$description": "Use to reset an element's border radius to 0 (sharp corners). Use when rounded corners would be incorrect (e.g., full-bleed edges). Do not use for buttons, controls, or cards that should stay rounded; use border.radius.action, border.radius.control, or border.radius.md instead.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:343",
+            "com.figma.scopes": [
+              "CORNER_RADIUS"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:47dec0129229a5ee2b052c5a09d38392c2bcb471/-1:-1",
+              "targetVariableName": "felt/border/radius/0",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 4,
+            "unit": "px"
+          },
+          "$description": "Use to set a very slightly rounded corner radius (e.g., code snippets). Always check for a more specific radius token (border.radius.action, border.radius.control) before applying this generic radius.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:344",
+            "com.figma.scopes": [
+              "CORNER_RADIUS"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:eb676e0fb3b81ca43d1bd66c1dca4c8434872be2/-1:-1",
+              "targetVariableName": "felt/border/radius/10",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "$description": "Use to set a slightly rounded corner radius (e.g., menu items). Always check for a more specific radius token (border.radius.action, border.radius.control) before applying this generic radius.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:345",
+            "com.figma.scopes": [
+              "CORNER_RADIUS"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:404c66933aaf00899ebea250d64662095233561d/-1:-1",
+              "targetVariableName": "felt/border/radius/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Use to set a moderately rounded corner radius (e.g., cards and tiles). Always check for a more specific radius token (border.radius.action, border.radius.control) before applying this generic radius.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:346",
+            "com.figma.scopes": [
+              "CORNER_RADIUS"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:d4345e030644aa929a6baf6c05bbd2385de7e1ac/-1:-1",
+              "targetVariableName": "felt/border/radius/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": {
+            "value": 24,
+            "unit": "px"
+          },
+          "$description": "Use to set a large corner radius (e.g., modals and page containers). Always check for a more specific radius token (border.radius.action, border.radius.control, border.radius.pill) before applying this generic radius. Do not use for buttons; use border.radius.action.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:347",
+            "com.figma.scopes": [
+              "CORNER_RADIUS"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:679919c2467cb0da93f914b0469143f772dc03da/-1:-1",
+              "targetVariableName": "felt/border/radius/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "pill": {
+          "$type": "dimension",
+          "$value": {
+            "value": 999,
+            "unit": "px"
+          },
+          "$description": "Use to set a circle or pill-shaped radius (e.g., avatars, badges, switches), or for expressive branding. Applying to all four corners at once is optional. For action buttons, prefer border.radius.action.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:348",
+            "com.figma.scopes": [
+              "CORNER_RADIUS"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:9e4e1a1b8001c76e4d2b9c06c3d3e42325160a14/-1:-1",
+              "targetVariableName": "felt/border/radius/100",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "interactive": {
+          "action": {
+            "$type": "dimension",
+            "$value": {
+              "value": 999,
+              "unit": "px"
+            },
+            "$description": "Use to set the border radius of actions such as CTAs and primary buttons. Do not use for form controls; use border.radius.control. Do not use for generic cards; use border.radius.md or border.radius.lg.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:349",
+              "com.figma.scopes": [
+                "CORNER_RADIUS"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:9e4e1a1b8001c76e4d2b9c06c3d3e42325160a14/-1:-1",
+                "targetVariableName": "felt/border/radius/100",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "control": {
+            "$type": "dimension",
+            "$value": {
+              "value": 999,
+              "unit": "px"
+            },
+            "$description": "Use to set the border radius of a control element such as a menu dropdown toggle. Do not use for buttons or CTAs; use border.radius.action.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:350",
+              "com.figma.scopes": [
+                "CORNER_RADIUS"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:9e4e1a1b8001c76e4d2b9c06c3d3e42325160a14/-1:-1",
+                "targetVariableName": "felt/border/radius/100",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "form-element": {
+            "$type": "dimension",
+            "$value": {
+              "value": 8,
+              "unit": "px"
+            },
+            "$description": "Use to set the border radius of a form elements such as text input or custom select dropdown toggles. Do not use for buttons or CTAs; use border.radius.action.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2789:206",
+              "com.figma.scopes": [
+                "CORNER_RADIUS"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:404c66933aaf00899ebea250d64662095233561d/-1:-1",
+                "targetVariableName": "felt/border/radius/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "focus-ring": {
+            "$type": "dimension",
+            "$value": {
+              "value": 999,
+              "unit": "px"
+            },
+            "$description": "Use to set the border radius of a form elements such as text input or custom select dropdown toggles. Do not use for buttons or CTAs; use border.radius.action.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:3049:1327",
+              "com.figma.scopes": [
+                "CORNER_RADIUS"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:9e4e1a1b8001c76e4d2b9c06c3d3e42325160a14/-1:-1",
+                "targetVariableName": "felt/border/radius/100",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          }
+        }
+      }
+    },
+    "font": {
+      "weight": {
+        "body": {
+          "default": {
+            "$type": "number",
+            "$value": 400,
+            "$description": "Use to set the font weight for regular body text. Do not use for headings; use font.weight.heading.default. For emphasized body text, use font.weight.body.bold.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2273:280",
+              "com.figma.scopes": [
+                "FONT_STYLE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:de6504a2ba19a41f381cf6f424d6dd91b25f6eca/-1:-1",
+                "targetVariableName": "felt/font/weight/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "medium": {
+            "$type": "number",
+            "$value": 500,
+            "$description": "Use to set the font weight for bold body text (e.g., strong inline emphasis). Do not use for headings; use font.weight.heading.default or font.weight.heading.bold.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2719:235",
+              "com.figma.scopes": [
+                "FONT_STYLE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:af4fbe6fa408e23e1e94fc325309f69d9546ee02/-1:-1",
+                "targetVariableName": "felt/font/weight/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "bold": {
+            "$type": "number",
+            "$value": 600,
+            "$description": "Use to set the font weight for bold body text (e.g., strong inline emphasis). Do not use for headings; use font.weight.heading.default or font.weight.heading.bold.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2273:281",
+              "com.figma.scopes": [
+                "FONT_STYLE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:ba5b574d1b37a184c63724ee4783b52ac40e408f/-1:-1",
+                "targetVariableName": "felt/font/weight/30",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          }
+        },
+        "heading": {
+          "default": {
+            "$type": "number",
+            "$value": 600,
+            "$description": "Use to set the font weight for regular heading text. For the single largest or most expressive heading on a page, consider font.weight.heading.bold. Do not use for body copy; use font.weight.body.default.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2273:282",
+              "com.figma.scopes": [
+                "FONT_STYLE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:ba5b574d1b37a184c63724ee4783b52ac40e408f/-1:-1",
+                "targetVariableName": "felt/font/weight/30",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "bold": {
+            "$type": "number",
+            "$value": 800,
+            "$description": "Use to set the font weight for bolded heading text. Reserve this for the largest/primary/H1 heading on the page and/or expressive branded moments. There should not be more than one bolded heading on a page. Do not use for body text; use font.weight.body.bold.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2273:283",
+              "com.figma.scopes": [
+                "FONT_STYLE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:c4db7a6c1646284a43a398fa6da2d569e28ec368/-1:-1",
+                "targetVariableName": "felt/font/weight/50",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          }
+        }
+      },
+      "size": {
+        "body": {
+          "sm": {
+            "$type": "dimension",
+            "$value": {
+              "value": 14,
+              "unit": "px"
+            },
+            "$description": "Use to set the font size for small body text (e.g., helper text, compact metadata). Do not use for headings; use font.size.heading.*. Prefer font.size.body.md for standard body copy.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:351",
+              "com.figma.scopes": [
+                "FONT_SIZE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:be53093969263a2e6ba2ff098c7f9d802980606a/-1:-1",
+                "targetVariableName": "felt/glyph/size/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "md": {
+            "$type": "dimension",
+            "$value": {
+              "value": 16,
+              "unit": "px"
+            },
+            "$description": "Use to set the font size for medium (default) body text. Do not use for headings; use font.size.heading.*. Use font.size.body.sm or font.size.body.lg when you need smaller or larger body copy.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:352",
+              "com.figma.scopes": [
+                "FONT_SIZE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:e821d2f8c4ce0e9e7e3fec61bdf8c63aabc05b3d/-1:-1",
+                "targetVariableName": "felt/glyph/size/30",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "lg": {
+            "$type": "dimension",
+            "$value": {
+              "value": 18,
+              "unit": "px"
+            },
+            "$description": "Use to set the font size for large body text (e.g., lead paragraphs). Do not use for headings; use font.size.heading.*. Prefer font.size.body.md for standard body copy.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:353",
+              "com.figma.scopes": [
+                "FONT_SIZE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:e1160befb4eaf4d252509db571b546c82d565489/-1:-1",
+                "targetVariableName": "felt/glyph/size/40",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          }
+        },
+        "heading": {
+          "xs": {
+            "$type": "dimension",
+            "$value": {
+              "value": 16,
+              "unit": "px"
+            },
+            "$description": "Use to set the font size for extra small heading text (e.g., subsection titles). Do not use for body copy; use font.size.body.*. Pair with font.family.heading and font.line-height.heading.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:354",
+              "com.figma.scopes": [
+                "FONT_SIZE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:e821d2f8c4ce0e9e7e3fec61bdf8c63aabc05b3d/-1:-1",
+                "targetVariableName": "felt/glyph/size/30",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "sm": {
+            "$type": "dimension",
+            "$value": {
+              "value": 18,
+              "unit": "px"
+            },
+            "$description": "Use to set the font size for small heading text. Do not use for body copy; use font.size.body.*. Pair with font.family.heading and font.line-height.heading.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:355",
+              "com.figma.scopes": [
+                "FONT_SIZE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:e1160befb4eaf4d252509db571b546c82d565489/-1:-1",
+                "targetVariableName": "felt/glyph/size/40",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "md": {
+            "$type": "dimension",
+            "$value": {
+              "value": 20,
+              "unit": "px"
+            },
+            "$description": "Use to set the font size for medium heading text. Do not use for body copy; use font.size.body.*. Pair with font.family.heading and font.line-height.heading.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:356",
+              "com.figma.scopes": [
+                "FONT_SIZE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:1dcf96136eea9943a1cf3b8edc49bafe025e1a37/-1:-1",
+                "targetVariableName": "felt/glyph/size/50",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "lg": {
+            "$type": "dimension",
+            "$value": {
+              "value": 24,
+              "unit": "px"
+            },
+            "$description": "Use to set the font size for large heading text. Do not use for body copy; use font.size.body.*. Pair with font.family.heading and font.line-height.heading.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:357",
+              "com.figma.scopes": [
+                "FONT_SIZE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:cc5638325487796cac6f2362adcb7123840558e6/-1:-1",
+                "targetVariableName": "felt/glyph/size/60",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "xl": {
+            "$type": "dimension",
+            "$value": {
+              "value": 32,
+              "unit": "px"
+            },
+            "$description": "Use to set the font size for extra large heading text (e.g., page titles). Do not use for body copy; use font.size.body.*. Pair with font.family.heading, font.line-height.heading, and consider font.weight.heading.bold for a single primary heading.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:358",
+              "com.figma.scopes": [
+                "FONT_SIZE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:7a7d9359352668c0f9363fbf49893662f57f15ea/-1:-1",
+                "targetVariableName": "felt/glyph/size/70",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          }
+        }
+      },
+      "family": {
+        "body": {
+          "$type": "string",
+          "$value": "Red Hat Text",
+          "$description": "Use to set the font family for body text (e.g., paragraphs, UI labels that are not headings). Do not use for headings; use font.family.heading. Do not use for code; use font.family.code.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2273:284",
+            "com.figma.type": "string",
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:240f585834ec1c5d61b16c2518ee0dc2bd9fdb54/-1:-1",
+              "targetVariableName": "felt/font/family/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "heading": {
+          "$type": "string",
+          "$value": "Red Hat Display",
+          "$description": "Use to set the font family for heading text. Do not use for body copy; use font.family.body. Do not use for code; use font.family.code.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2273:285",
+            "com.figma.type": "string",
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:4441c05557caba6224d3803abdb9efeb8e3109d6/-1:-1",
+              "targetVariableName": "felt/font/family/10",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "code": {
+          "$type": "string",
+          "$value": "Red Hat Mono",
+          "$description": "Use to set the font family for code text (e.g., snippets, inline code, monospace data). Do not use for body copy or headings; use font.family.body or font.family.heading.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2273:286",
+            "com.figma.type": "string",
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:4122c614a7ee32b8df3d9c7c1fb5ea2369001636/-1:-1",
+              "targetVariableName": "felt/font/family/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      },
+      "line-height": {
+        "body": {
+          "$type": "number",
+          "$value": 1.5,
+          "$description": "Use to set the line-height for body text. Pair with font.size.body.* and font.family.body. Do not use for headings; use font.line-height.heading.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2273:270",
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:0c9690223c28461352c470c340150c83699d9790/-1:-1",
+              "targetVariableName": "felt/font/line-height/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "heading": {
+          "$type": "number",
+          "$value": 1.2999999523162842,
+          "$description": "Use to set the line-height for heading text. Pair with font.size.heading.* and font.family.heading. Do not use for body copy; use font.line-height.body.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2273:271",
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:63d11f7188015907796c71b76acbf757b3988d8b/-1:-1",
+              "targetVariableName": "felt/font/line-height/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "figma-only": {
+          "body": {
+            "sm": {
+              "$type": "dimension",
+              "$value": {
+                "value": 21,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2273:272",
+                "com.figma.scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:40faf0e33e0e8fc2d962bcaa94ee820b4fcd8b9f/-1:-1",
+                  "targetVariableName": "felt/font/line-height/figma-only/body/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "md": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2273:273",
+                "com.figma.scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:50b74bee4ead33afd5b96445ecf32485facef40e/-1:-1",
+                  "targetVariableName": "felt/font/line-height/figma-only/body/30",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "lg": {
+              "$type": "dimension",
+              "$value": {
+                "value": 27,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2273:274",
+                "com.figma.scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:96895bf85a1ab34b88d5da9b7f27c694bd189993/-1:-1",
+                  "targetVariableName": "felt/font/line-height/figma-only/body/40",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            }
+          },
+          "heading": {
+            "xs": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20.799999237060547,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2273:275",
+                "com.figma.scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:9c96a1afec620c072189dc2daf72c12041546fd5/-1:-1",
+                  "targetVariableName": "felt/font/line-height/figma-only/heading/10",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "sm": {
+              "$type": "dimension",
+              "$value": {
+                "value": 23.399999618530273,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2273:276",
+                "com.figma.scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:e3786ab27cb801778f699c2cd014f0cc78e588e5/-1:-1",
+                  "targetVariableName": "felt/font/line-height/figma-only/heading/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "md": {
+              "$type": "dimension",
+              "$value": {
+                "value": 26,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2273:277",
+                "com.figma.scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:84ae5714369bea226944a5d1a68cb0abbd2d4cb8/-1:-1",
+                  "targetVariableName": "felt/font/line-height/figma-only/heading/30",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "lg": {
+              "$type": "dimension",
+              "$value": {
+                "value": 31.200000762939453,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2273:278",
+                "com.figma.scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:343b3fcca9168034eb6f04223fc41268b5c2cd24/-1:-1",
+                  "targetVariableName": "felt/font/line-height/figma-only/heading/40",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "xl": {
+              "$type": "dimension",
+              "$value": {
+                "value": 46.79999923706055,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2273:279",
+                "com.figma.scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:e3069c158e2f67f966bd94b820704774021ec9ce/-1:-1",
+                  "targetVariableName": "felt/font/line-height/figma-only/heading/50",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "2xs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "$description": "Use to set extra small icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2839:32",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:6c13446ad8203881bad26eb689c598609cdfa94a/-1:-1",
+              "targetVariableName": "felt/glyph/size/5",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 12,
+            "unit": "px"
+          },
+          "$description": "Use to set extra small icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2423:300",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:bf8f1e4995d703d74ea56bc0de52c5b3bd44eb5a/-1:-1",
+              "targetVariableName": "felt/glyph/size/10",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": {
+            "value": 14,
+            "unit": "px"
+          },
+          "$description": "Use to set small icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2423:299",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:be53093969263a2e6ba2ff098c7f9d802980606a/-1:-1",
+              "targetVariableName": "felt/glyph/size/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Use to set medium icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2423:298",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:e821d2f8c4ce0e9e7e3fec61bdf8c63aabc05b3d/-1:-1",
+              "targetVariableName": "felt/glyph/size/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": {
+            "value": 18,
+            "unit": "px"
+          },
+          "$description": "Use to set large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2423:297",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:e1160befb4eaf4d252509db571b546c82d565489/-1:-1",
+              "targetVariableName": "felt/glyph/size/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 20,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2423:353",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1dcf96136eea9943a1cf3b8edc49bafe025e1a37/-1:-1",
+              "targetVariableName": "felt/glyph/size/50",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "3xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2838:3267",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:7a7d9359352668c0f9363fbf49893662f57f15ea/-1:-1",
+              "targetVariableName": "felt/glyph/size/70",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 24,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2838:3262",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:cc5638325487796cac6f2362adcb7123840558e6/-1:-1",
+              "targetVariableName": "felt/glyph/size/60",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "4xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 40,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2838:3268",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:48322bb52ae576cc7da579fe8e9066d3fbe20eab/-1:-1",
+              "targetVariableName": "felt/glyph/size/80",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "5xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 48,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2838:3263",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:506159b79815828f83a4e99288201d1defdc8af1/-1:-1",
+              "targetVariableName": "felt/glyph/size/90",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "6xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 64,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2838:3266",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:70b99ed47057acd53422372d82561a67487b5ea3/-1:-1",
+              "targetVariableName": "felt/glyph/size/100",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "7xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 80,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2838:3265",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:be28d68cc695e211b96830b63546d9ef6e60eb42/-1:-1",
+              "targetVariableName": "felt/glyph/size/110",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "8xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 96,
+            "unit": "px"
+          },
+          "$description": "Use to set extra large icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2838:3264",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:75da9acf9ff44de1e3aff90a3fa5e6b158d75884/-1:-1",
+              "targetVariableName": "felt/glyph/size/120",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "9xl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 128,
+            "unit": "px"
+          },
+          "$description": "Use to set extra small icon size. Icons should typically inherit the font size of their parent element. Use this token only when the icon must differ from that font size, or when the icon is standalone.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2838:3191",
+            "com.figma.scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:05b7cde45608fe13aeb367cf35c6e57db65dc746/-1:-1",
+              "targetVariableName": "felt/glyph/size/130",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      }
+    },
+    "text-decoration": {
+      "link": {
+        "line": {
+          "$type": "string",
+          "$value": "underline",
+          "$description": "Use to set the line type for links with a text decoration (e.g., underline). Pair with color.text.interactive.link.* and color.text-decoration.*. Do not use this token as a color.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2273:288",
+            "com.figma.type": "string"
+          }
+        },
+        "offset": {
+          "$type": "dimension",
+          "$value": "{felt.space.fluid.xs}",
+          "$description": "Use to set the offset distance for link text decorations so the underline does not collide with glyphs. Pair with text-decoration.link.line and text-decoration.link.style.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2292:296",
+            "com.figma.scopes": [
+              "GAP"
+            ]
+          }
+        },
+        "style": {
+          "$type": "string",
+          "$value": "dashed",
+          "$description": "Use to set the line style for links with a text decoration (e.g., dashed). Pair with text-decoration.link.line and color.text-decoration.*. Do not use this token as a color.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2273:289",
+            "com.figma.type": "string"
+          }
+        }
+      }
+    },
+    "effect": {
+      "blur": {
+        "glass": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Use to set the blur for the glass variant of panels, cards, and drawers that sit directly over the background image. Always pair with color.surface.glass and color.border.glass. Do not apply to nested cards inside an element that already uses glass styles.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2273:287",
+            "com.figma.scopes": [
+              "EFFECT_FLOAT"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:69705d05ac625a20c557b72565669a4a027c89e5/-1:-1",
+              "targetVariableName": "felt/effect/blur/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      }
+    },
+    "layout": {
+      "z-index": {
+        "sm": {
+          "$type": "number",
+          "$value": 100,
+          "$description": "Use to set the z-index for raised elements at a lower elevation (e.g., sticky bars). For higher elevation overlays such as modals, use layout.z-index.md. Do not use as a spacing value.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2292:300",
+            "com.figma.hiddenFromPublishing": true,
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:23d64b0911a5a151655e84b032110c8aaa5b7998/-1:-1",
+              "targetVariableName": "felt/layout/z-index/10",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "md": {
+          "$type": "number",
+          "$value": 200,
+          "$description": "Use to set the z-index for raised elements at a medium elevation (e.g., modals, popovers). For lower elevation, use layout.z-index.sm. Do not use as a spacing value.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2292:301",
+            "com.figma.hiddenFromPublishing": true,
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:e58f528c6bb886f0c58d83c1acca4f4120ef7ef1/-1:-1",
+              "targetVariableName": "felt/layout/z-index/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Default"
+  }
+}

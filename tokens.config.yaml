@@ -1,0 +1,45 @@
+# Figma export collections this repo builds.
+#
+# The export in tokens/figma/ is kept verbatim: folder = collection, file = source mode.
+# `role` decides the CSS output shape:
+#   primitive -> raw values in the primitive layer
+#   color     -> Light/Dark scheme pair (discovered from the folder) as light-dark()
+#   unit      -> source density in the unit layer and density overlays
+#   motion    -> source mode in the motion layer
+#
+# Omit a source selector when the collection has one file. Unit collections
+# select their export files by `density` or `densities`; other roles use
+# `source`/`sources`. A CSS mode below can list several densities so each
+# density gets the matching high-contrast values.
+
+base:
+  - name: Primitives
+    role: primitive
+  - name: Semantic motion
+    role: motion
+  - name: Semantic colors
+    role: color
+  - name: Semantic units
+    role: unit
+    density: Default
+
+modes:
+  - name: glass
+    collections:
+      - name: Glass colors
+        role: color
+  - name: high-contrast
+    collections:
+      - name: High contrast colors
+        role: color
+      - name: High contrast units
+        role: unit
+        densities: [Default, Compact, Spacious]
+
+densities:
+  - name: compact
+    collection: Semantic units
+    density: Compact
+  - name: spacious
+    collection: Semantic units
+    density: Spacious

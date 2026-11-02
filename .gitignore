@@ -2,3 +2,4 @@ node_modules/
 dist/
 .wireit/
 pipeline/**/*.js
+.DS_Store

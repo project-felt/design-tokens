@@ -12,28 +12,49 @@
   "devDependencies": {
     "@types/node": "^26.6.0",
     "typescript": "^7.0.2",
-    "wireit": "^0.14.13"
+    "wireit": "^0.14.13",
+    "yaml": "^2.9.1"
   },
   "wireit": {
     "typecheck": {
       "command": "tsc --noEmit",
-      "files": ["pipeline/**/*.ts", "tsconfig.json"],
+      "files": [
+        "pipeline/**/*.ts",
+        "tsconfig.json"
+      ],
       "output": []
     },
     "compile": {
       "command": "tsc",
-      "files": ["pipeline/**/*.ts", "tsconfig.json"],
-      "output": ["pipeline/**/*.js"]
+      "files": [
+        "pipeline/**/*.ts",
+        "tsconfig.json"
+      ],
+      "output": [
+        "pipeline/**/*.js"
+      ]
     },
     "generate": {
       "command": "node sd.config.js",
-      "dependencies": ["compile"],
-      "files": ["src/**/*.json", "sd.config.js", "pipeline/**/*.ts"],
-      "output": ["dist/**"]
+      "dependencies": [
+        "compile"
+      ],
+      "files": [
+        "tokens/figma/**/*.json",
+        "tokens.config.yaml",
+        "sd.config.js",
+        "pipeline/**/*.ts"
+      ],
+      "output": [
+        "dist/**"
+      ]
     },
     "build": {
-      "command": "echo Build complete",
-      "dependencies": ["typecheck", "generate"],
+      "command": "node pipeline/report.js",
+      "dependencies": [
+        "typecheck",
+        "generate"
+      ],
       "output": []
     }
   }
