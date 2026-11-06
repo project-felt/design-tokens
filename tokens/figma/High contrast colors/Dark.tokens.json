@@ -1,0 +1,2695 @@
+{
+  "felt": {
+    "color": {
+      "brand": {
+        "primary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1,
+            "hex": "#FFFFFF"
+          },
+          "$description": "Use as the parent brand color. Always defer to specific branded property tokens over this parent token (color.text.brand, color.icon.brand, color.fill.interactive.brand.*, color.border.brand, color.border.interactive.brand.*). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:2",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1a4bfa26f5854427d366eaa601112407abca5176/-1:-1",
+              "targetVariableName": "felt/color/white",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1,
+            "hex": "#FFFFFF"
+          },
+          "$description": "Use as the parent secondary brand color. Always defer to specific branded property tokens over this parent token (color.border.interactive.brand.*). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:3",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1a4bfa26f5854427d366eaa601112407abca5176/-1:-1",
+              "targetVariableName": "felt/color/white",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      },
+      "interactive": {
+        "primary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.572549045085907,
+              0.772549033164978,
+              0.9764705896377563
+            ],
+            "alpha": 1,
+            "hex": "#92C5F9"
+          },
+          "$description": "Use as the parent primary interactive color. Always defer to specific interactive property tokens over this parent token (color.text.interactive.*, color.icon.interactive.*, color.fill.interactive.*, color.border.interactive.*, color.text.on-interactive, color.icon.on-interactive). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:4",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:880841ec1abcda3a64a2e25e7ac64210e8923396/-1:-1",
+              "targetVariableName": "felt/color/blue/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7254902124404907,
+              0.8549019694328308,
+              0.9882352948188782
+            ],
+            "alpha": 1,
+            "hex": "#B9DAFC"
+          },
+          "$description": "Use as the parent secondary interactive color. Always defer to specific interactive property tokens that alias this color (color.border.interactive.subtle.hover, color.border.interactive.subtle.pressed, color.fill.interactive.subtle.pressed). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:5",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+              "targetVariableName": "felt/color/blue/20",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        }
+      },
+      "status": {
+        "success": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.686274528503418,
+              0.8627451062202454,
+              0.5607843399047852
+            ],
+            "alpha": 1,
+            "hex": "#AFDC8F"
+          },
+          "$description": "Use as the parent success status color. Always defer to specific success property tokens over this parent token (color.icon.status.success, color.fill.status.success, color.border.status.success, color.text.status.success). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:6",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:ebb6df63becad07bb8c1c3f01180ef2c97ebf642/-1:-1",
+              "targetVariableName": "felt/color/green/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "info": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7137255072593689,
+              0.6509804129600525,
+              0.9137254953384399
+            ],
+            "alpha": 1,
+            "hex": "#B6A6E9"
+          },
+          "$description": "Use as the parent info status color. Always defer to specific info property tokens over this parent token (color.icon.status.info, color.fill.status.info, color.border.status.info, color.text.status.info). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:7",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1218bc2bbae87d917432b8f92db1991142de3800/-1:-1",
+              "targetVariableName": "felt/color/purple/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "warning": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.800000011920929,
+              0.09019608050584793
+            ],
+            "alpha": 1,
+            "hex": "#FFCC17"
+          },
+          "$description": "Use as the parent warning status color. Always defer to specific warning property tokens over this parent token (color.icon.status.warning, color.fill.status.warning, color.border.status.warning, color.text.status.warning). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:8",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1306c39eb831161bbe27397acf2cc3abe7ee2c49/-1:-1",
+              "targetVariableName": "felt/color/yellow/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "caution": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9607843160629272,
+              0.572549045085907,
+              0.10588235408067703
+            ],
+            "alpha": 1,
+            "hex": "#F5921B"
+          },
+          "$description": "Use as the parent caution status color. Always defer to specific caution property tokens over this parent token (color.icon.status.caution, color.fill.status.caution, color.border.status.caution, color.text.status.caution). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:9",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:41d0e21a02cba25394dce3fb48a6e1c7003bfb47/-1:-1",
+              "targetVariableName": "felt/color/orange/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "danger": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.95686274766922,
+              0.47058823704719543,
+              0.29019609093666077
+            ],
+            "alpha": 1,
+            "hex": "#F4784A"
+          },
+          "$description": "Use as the parent danger status color. Always defer to specific danger property tokens over this parent token (color.icon.status.danger, color.fill.status.danger, color.border.status.danger, color.text.status.danger). Do not apply this token directly.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:10",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:c052b26052a0a086da0d11d32cb1a3111f7aeae0/-1:-1",
+              "targetVariableName": "felt/color/red-orange/40",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        }
+      },
+      "canvas": {
+        "primary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 1,
+            "hex": "#000000"
+          },
+          "$description": "Use as the primary background color for the UI shell (e.g., the page canvas behind content). Do not use for cards, panels, or floating overlays; use color.surface.* for those surfaces.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:11",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:a1993dcca88d0152fd1746fb9bff82f421e29477/-1:-1",
+              "targetVariableName": "felt/color/black",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.08235294371843338,
+              0.08235294371843338,
+              0.08235294371843338
+            ],
+            "alpha": 1,
+            "hex": "#151515"
+          },
+          "$description": "Use as the secondary background color for the UI shell (e.g., a left sidebar or complementary chrome region). Do not use for cards, panels, or floating overlays; use color.surface.* for those surfaces.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:12",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1f54b77a6682d27f9f31f7023ed3d621db8d1725/-1:-1",
+              "targetVariableName": "felt/color/gray/95",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      },
+      "surface": {
+        "primary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.08235294371843338,
+              0.08235294371843338,
+              0.08235294371843338
+            ],
+            "alpha": 1,
+            "hex": "#151515"
+          },
+          "$description": "Use as the primary background color for UI surfaces that sit on the canvas (e.g., cards, page sections, content areas). Also use for nested cards inside a glass panel, card, or drawer that already uses color.surface.glass. Do not use for the page shell itself; use color.canvas.primary. Text on this surface should use color.text.primary.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:13",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1f54b77a6682d27f9f31f7023ed3d621db8d1725/-1:-1",
+              "targetVariableName": "felt/color/gray/95",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.12156862765550613,
+              0.12156862765550613,
+              0.12156862765550613
+            ],
+            "alpha": 1,
+            "hex": "#1F1F1F"
+          },
+          "$description": "Use as the secondary background color for UI surfaces that need contrast against surface.primary (e.g., nested cards, inset sections). Do not use for the page shell; use color.canvas.secondary. Do not use for overlays; use color.surface.floating.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:14",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:58b598311f6e8afbf4fb12c20a9f113e7c29d5e7/-1:-1",
+              "targetVariableName": "felt/color/gray/90",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "floating": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.16078431904315948,
+              0.16078431904315948,
+              0.16078431904315948
+            ],
+            "alpha": 1,
+            "hex": "#292929"
+          },
+          "$description": "Use as the background color for floating UI surfaces that overlay content (e.g., toast alerts, menus, modals, overlay drawers). Do not use for in-flow cards or page sections; use color.surface.primary. Pair raised floating surfaces with color.shadow.md when a shadow is needed.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:16",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.composedColor": {
+              "colorArg": {
+                "type": "alias",
+                "alias": {
+                  "targetVariableId": "VariableID:03391ff0c2fb73c132e6001a75823b76c29b6632/-1:-1",
+                  "targetVariableName": "felt/color/gray/80",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              },
+              "opacityArg": {
+                "type": "number",
+                "value": 100
+              }
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "glass": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.08235294371843338,
+              0.08235294371843338,
+              0.08235294371843338
+            ],
+            "alpha": 1,
+            "hex": "#151515"
+          },
+          "$description": "Use as the background color for the glass variant of panels, cards, and drawers that sit directly over the background image. Always pair with color.border.glass and effect.blur.glass. Do not apply glass tokens to nested cards inside an element that already uses glass styles; those nested surfaces should use color.surface.primary.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2260:2825",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.composedColor": {
+              "colorArg": {
+                "type": "alias",
+                "alias": {
+                  "targetVariableName": "felt/color/surface/primary"
+                }
+              },
+              "opacityArg": {
+                "type": "number",
+                "value": 100
+              }
+            }
+          }
+        }
+      },
+      "fill": {
+        "disabled": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.43921568989753723,
+              0.43921568989753723,
+              0.43921568989753723
+            ],
+            "alpha": 1,
+            "hex": "#707070"
+          },
+          "$description": "Use as the fill color for disabled elements (e.g., disabled buttons and controls). Pair with color.border.disabled, color.text.on-disabled, and color.icon.on-disabled when the content sits on this fill. Do not use for enabled interactive fills; use color.fill.interactive.* instead.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:17",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:b04ac3c62c4af2a89ce03eeadde41d3e064a3f72/-1:-1",
+              "targetVariableName": "felt/color/gray/50",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "interactive": {
+          "default": {
+            "$type": "color",
+            "$value": "{felt.color.interactive.primary}",
+            "$description": "Use as the default fill color for primary interactive elements (e.g., primary buttons). Text and icons on this fill should use color.text.on-interactive and color.icon.on-interactive. Filled buttons typically do not also use a border. Do not use for branded CTAs, subtle, or control fills; use color.fill.interactive.brand.*, color.fill.interactive.subtle.*, or color.fill.interactive.control.* instead.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:20",
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7254902124404907,
+                0.8549019694328308,
+                0.9882352948188782
+              ],
+              "alpha": 1,
+              "hex": "#B9DAFC"
+            },
+            "$description": "Use as the hover-state fill color for primary interactive elements (e.g., primary buttons). Applied when the user hovers over the element. Pair with color.text.on-interactive and color.icon.on-interactive. Filled buttons typically do not also use a border.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:21",
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                "targetVariableName": "felt/color/blue/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "focus": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7254902124404907,
+                0.8549019694328308,
+                0.9882352948188782
+              ],
+              "alpha": 1,
+              "hex": "#B9DAFC"
+            },
+            "$description": "Use as the hover-state fill color for primary interactive elements (e.g., primary buttons). Applied when the user hovers over the element. Pair with color.text.on-interactive and color.icon.on-interactive. Filled buttons typically do not also use a border.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:3050:1819",
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                "targetVariableName": "felt/color/blue/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "selected": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8784313797950745,
+                0.9411764740943909,
+                1
+              ],
+              "alpha": 1,
+              "hex": "#E0F0FF"
+            },
+            "$description": "Use as the selected-state fill color for primary interactive elements (e.g., primary buttons or selected actions). Applied when the element is selected or active. Pair with color.text.on-interactive and color.icon.on-interactive.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:23",
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                "targetVariableName": "felt/color/blue/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8784313797950745,
+                0.9411764740943909,
+                1
+              ],
+              "alpha": 1,
+              "hex": "#E0F0FF"
+            },
+            "$description": "Use as the pressed-state fill color for primary interactive elements (e.g., primary buttons). Applied while the user is pressing the element. Do not use for selected states; use color.fill.interactive.selected.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:22",
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                "targetVariableName": "felt/color/blue/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "control": {
+            "default": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.08235294371843338,
+                  0.08235294371843338,
+                  0.08235294371843338
+                ],
+                "alpha": 1,
+                "hex": "#151515"
+              },
+              "$description": "Use as the default fill color for control elements (e.g., form inputs, menu toggles). Do not use for buttons (color.fill.interactive.default) or CTAs (color.fill.interactive.brand.*). Pair with color.border.interactive.control.default.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:18",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:1f54b77a6682d27f9f31f7023ed3d621db8d1725/-1:-1",
+                  "targetVariableName": "felt/color/gray/95",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            },
+            "read-only": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.08235294371843338,
+                  0.08235294371843338,
+                  0.08235294371843338
+                ],
+                "alpha": 1,
+                "hex": "#151515"
+              },
+              "$description": "Use as the read-only fill color for control elements (e.g., form inputs, menu toggles) that cannot be edited. Do not use for disabled controls; use color.fill.disabled. Pair with color.border.interactive.control.default.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:19",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:1f54b77a6682d27f9f31f7023ed3d621db8d1725/-1:-1",
+                  "targetVariableName": "felt/color/gray/95",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            }
+          },
+          "brand": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.brand.primary}",
+              "$description": "Use as the default fill color for branded interactive elements (e.g., primary CTA backgrounds). Text and icons on this fill should use color.text.on-brand and color.icon.on-brand. Filled brand CTAs typically do not also use a border. Do not use for primary buttons; use color.fill.interactive.default.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:24",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9490196108818054,
+                  0.9490196108818054,
+                  0.9490196108818054
+                ],
+                "alpha": 1,
+                "hex": "#F2F2F2"
+              },
+              "$description": "Use as the hover-state fill color for branded interactive elements (e.g., primary CTAs). Applied when the user hovers over the element. Pair with color.text.on-brand and color.icon.on-brand. Filled brand CTAs typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:25",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:8448957800137f3880998919476513433285b4e6/-1:-1",
+                  "targetVariableName": "felt/color/gray/10",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            },
+            "focus": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.6509804129600525,
+                  0,
+                  0
+                ],
+                "alpha": 1,
+                "hex": "#A60000"
+              },
+              "$description": "Use as the hover-state fill color for branded interactive elements (e.g., primary CTAs). Applied when the user hovers over the element. Pair with color.text.on-brand and color.icon.on-brand. Filled brand CTAs typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:3054:511",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:b2e46cdf9d4bac7fcb9aa9867526ce6a4aae38e2/-1:-1",
+                  "targetVariableName": "felt/color/red/60",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "selected": {
+              "$type": "color",
+              "$value": "{felt.color.brand.primary}",
+              "$description": "Use as the selected-state fill color for branded interactive elements (e.g., selected navigation items, active tabs, jump links). Pair with color.text.on-brand and color.icon.on-brand.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:27",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            },
+            "pressed": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.8784313797950745,
+                  0.8784313797950745,
+                  0.8784313797950745
+                ],
+                "alpha": 1,
+                "hex": "#E0E0E0"
+              },
+              "$description": "Use as the pressed-state fill color for branded interactive elements (e.g., primary CTAs). Applied while the user is pressing the element. Do not use for selected states; use color.fill.interactive.brand.selected.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:26",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:7b9aa4161737c1840ee5af640bda9dbc60c92675/-1:-1",
+                  "targetVariableName": "felt/color/gray/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            }
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7803921699523926,
+                  0.7803921699523926,
+                  0.7803921699523926
+                ],
+                "alpha": 0,
+                "hex": "#C7C7C7"
+              },
+              "$description": "Use as the fully transparent default fill for ghost buttons, navigation items, tabs, and jump links (fill on hover, pressed, or selected). Pair with color.text.interactive.subtle.default and color.icon.interactive.subtle.default; ghost buttons pair with color.text.interactive.* and color.icon.interactive.* instead. Toggle buttons may also use color.border.interactive.control.*.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:28",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+                      "targetVariableName": "felt/color/gray/30",
+                      "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                      "targetVariableSetName": "Primitives"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableId": "VariableID:825e889c805f5add00fa7c67132766ed0d10f7e4/-1:-1",
+                      "targetVariableName": "felt/opacity/0",
+                      "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                      "targetVariableSetName": "Primitives"
+                    }
+                  }
+                }
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7803921699523926,
+                  0.7803921699523926,
+                  0.7803921699523926
+                ],
+                "alpha": 0.15000000596046448,
+                "hex": "#C7C7C7"
+              },
+              "$description": "Use as the hover-state fill for elements that rest on color.fill.interactive.subtle.default. Pair with color.text.interactive.subtle.hover and color.icon.interactive.subtle.hover; ghost buttons pair with color.text.interactive.hover and color.icon.interactive.hover instead.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:29",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+                      "targetVariableName": "felt/color/gray/30",
+                      "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                      "targetVariableSetName": "Primitives"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableId": "VariableID:f787a036978a6bd6db010f956dd5fc399a65e1da/-1:-1",
+                      "targetVariableName": "felt/opacity/15",
+                      "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                      "targetVariableSetName": "Primitives"
+                    }
+                  }
+                }
+              }
+            },
+            "selected": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7803921699523926,
+                  0.7803921699523926,
+                  0.7803921699523926
+                ],
+                "alpha": 0.15000000596046448,
+                "hex": "#C7C7C7"
+              },
+              "$description": "Use as the selected-state fill for elements that rest on color.fill.interactive.subtle.default. Pair with color.text.interactive.subtle.selected and color.icon.interactive.subtle.selected; ghost buttons pair with color.text.interactive.selected and color.icon.interactive.selected instead.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:31",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+                      "targetVariableName": "felt/color/gray/30",
+                      "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                      "targetVariableSetName": "Primitives"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableId": "VariableID:f787a036978a6bd6db010f956dd5fc399a65e1da/-1:-1",
+                      "targetVariableName": "felt/opacity/15",
+                      "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                      "targetVariableSetName": "Primitives"
+                    }
+                  }
+                }
+              }
+            },
+            "pressed": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7254902124404907,
+                  0.8549019694328308,
+                  0.9882352948188782
+                ],
+                "alpha": 0.15000000596046448,
+                "hex": "#B9DAFC"
+              },
+              "$description": "Use as the pressed-state fill for elements that rest on color.fill.interactive.subtle.default. Do not use for selected states; use color.fill.interactive.subtle.selected. Pair with color.text.interactive.subtle.pressed and color.icon.interactive.subtle.pressed; ghost buttons pair with color.text.interactive.pressed and color.icon.interactive.pressed instead.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:30",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableName": "felt/color/interactive/secondary"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableId": "VariableID:f787a036978a6bd6db010f956dd5fc399a65e1da/-1:-1",
+                      "targetVariableName": "felt/opacity/15",
+                      "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                      "targetVariableSetName": "Primitives"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "status": {
+          "danger": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.danger}",
+              "$description": "Use as the default fill color for elements conveying a danger status (e.g., status labels, danger buttons). Do not use as an alert background.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:32",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          },
+          "warning": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.warning}",
+              "$description": "Use as the default fill color for elements conveying a warning status (e.g., status labels, warning buttons). Do not use as an alert background.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:36",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          },
+          "success": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.success}",
+              "$description": "Use as the default fill color for elements conveying a success status (e.g., status labels). Do not use as an alert background.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:40",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          },
+          "info": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.info}",
+              "$description": "Use as the default fill color for elements conveying an info status (e.g., status labels). Do not use as an alert background.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:44",
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7803921699523926,
+              0.7803921699523926,
+              0.7803921699523926
+            ],
+            "alpha": 1,
+            "hex": "#C7C7C7"
+          },
+          "$description": "Use as the default border color for static elements (e.g., dividers, cards). Do not use for interactive, branded, status, or disabled borders; use color.border.interactive.*, color.border.brand, color.border.status.*, or color.border.disabled instead.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:67",
+            "com.figma.scopes": [
+              "STROKE"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+              "targetVariableName": "felt/color/gray/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.43921568989753723,
+              0.43921568989753723,
+              0.43921568989753723
+            ],
+            "alpha": 1,
+            "hex": "#707070"
+          },
+          "$description": "Use as the subtle border color for static elements that need lighter separation than color.border.default (e.g., nested cards, quiet dividers). Do not use for interactive or status borders; use color.border.interactive.* or color.border.status.* instead.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:68",
+            "com.figma.scopes": [
+              "STROKE"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:b04ac3c62c4af2a89ce03eeadde41d3e064a3f72/-1:-1",
+              "targetVariableName": "felt/color/gray/50",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{felt.color.fill.disabled}",
+          "$description": "Use as the border color for disabled interactive elements. Pair with color.fill.disabled, color.text.disabled or color.text.on-disabled, and color.icon.disabled or color.icon.on-disabled. Do not use for enabled interactive borders.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2347:105",
+            "com.figma.scopes": [
+              "STROKE"
+            ]
+          }
+        },
+        "brand": {
+          "$type": "color",
+          "$value": "{felt.color.brand.primary}",
+          "$description": "Use as the static border color for decorative branded accents (e.g., dividers). For interactive brand elements such as CTAs, use color.border.interactive.brand.* instead.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:69",
+            "com.figma.scopes": [
+              "STROKE"
+            ]
+          }
+        },
+        "glass": {
+          "$type": "color",
+          "$value": "{felt.color.surface.primary}",
+          "$description": "Use as the border color for the glass variant of panels, cards, and drawers that sit directly over the background image. Always pair with color.surface.glass and effect.blur.glass. Do not apply to nested cards inside an element that already uses glass styles; use color.border.default or color.border.subtle.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2260:2827",
+            "com.figma.scopes": [
+              "STROKE"
+            ]
+          }
+        },
+        "focus-ring": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0.4000000059604645,
+              0.800000011920929
+            ],
+            "alpha": 1,
+            "hex": "#0066CC"
+          },
+          "$description": "Use as the hover-state border color for primary interactive elements that are outlined rather than filled. Applied when the user hovers over the element. Filled buttons typically do not also use a border.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3050:1818",
+            "com.figma.scopes": [
+              "STROKE"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:b603060d0a452176b65d4ae0ca3c52a3151da53f/-1:-1",
+              "targetVariableName": "felt/color/blue/50",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "interactive": {
+          "default": {
+            "$type": "color",
+            "$value": "{felt.color.interactive.primary}",
+            "$description": "Use as the default border color for primary interactive elements that are outlined rather than filled (e.g., secondary buttons). Filled buttons typically do not also use a border; use color.fill.interactive.* without a border. Do not use for subtle, branded, or control borders; use color.border.interactive.subtle.*, color.border.interactive.brand.*, or color.border.interactive.control.* instead.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:70",
+              "com.figma.scopes": [
+                "STROKE"
+              ]
+            }
+          },
+          "hover": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7254902124404907,
+                0.8549019694328308,
+                0.9882352948188782
+              ],
+              "alpha": 1,
+              "hex": "#B9DAFC"
+            },
+            "$description": "Use as the hover-state border color for primary interactive elements that are outlined rather than filled. Applied when the user hovers over the element. Filled buttons typically do not also use a border.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:71",
+              "com.figma.scopes": [
+                "STROKE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                "targetVariableName": "felt/color/blue/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "focus": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7254902124404907,
+                0.8549019694328308,
+                0.9882352948188782
+              ],
+              "alpha": 1,
+              "hex": "#B9DAFC"
+            },
+            "$description": "Use as the hover-state border color for primary interactive elements that are outlined rather than filled. Applied when the user hovers over the element. Filled buttons typically do not also use a border.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:3054:487",
+              "com.figma.scopes": [
+                "STROKE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                "targetVariableName": "felt/color/blue/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "selected": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8784313797950745,
+                0.9411764740943909,
+                1
+              ],
+              "alpha": 1,
+              "hex": "#E0F0FF"
+            },
+            "$description": "Use as the selected-state border color for primary interactive elements that are outlined rather than filled. Applied when the element is selected or active. Do not use for pressed states; use color.border.interactive.pressed. Filled buttons typically do not also use a border.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:73",
+              "com.figma.scopes": [
+                "STROKE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                "targetVariableName": "felt/color/blue/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8784313797950745,
+                0.9411764740943909,
+                1
+              ],
+              "alpha": 1,
+              "hex": "#E0F0FF"
+            },
+            "$description": "Use as the pressed-state border color for primary interactive elements that are outlined rather than filled. Applied while the user is pressing the element. Do not use for selected states; use color.border.interactive.selected. Filled buttons typically do not also use a border.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:72",
+              "com.figma.scopes": [
+                "STROKE"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                "targetVariableName": "felt/color/blue/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.border.default}",
+              "$description": "Use as the default border color for subtle interactive elements that are outlined rather than filled (e.g., tertiary buttons). Filled buttons typically do not also use a border. Do not use for primary, branded, or control interactive borders; use color.border.interactive.default, color.border.interactive.brand.*, or color.border.interactive.control.* instead.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:74",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{felt.color.interactive.secondary}",
+              "$description": "Use as the hover-state border color for subtle interactive elements that are outlined rather than filled (e.g., tertiary buttons). Applied when the user hovers over the element. Filled buttons typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:75",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            },
+            "selected": {
+              "$type": "color",
+              "$value": "{felt.color.interactive.primary}",
+              "$description": "Use as the selected-state border color for subtle interactive elements that are outlined rather than filled (e.g., tertiary buttons). Applied when the element is selected or active. Filled buttons typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:77",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            },
+            "pressed": {
+              "$type": "color",
+              "$value": "{felt.color.interactive.secondary}",
+              "$description": "Use as the pressed-state border color for subtle interactive elements that are outlined rather than filled (e.g., tertiary buttons). Applied while the user is pressing the element. Do not use for selected states; use color.border.interactive.subtle.selected. Filled buttons typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:76",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            }
+          },
+          "brand": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.brand.secondary}",
+              "$description": "Use as the default border color for branded interactive elements that are outlined rather than filled (e.g., branded secondary CTAs). Filled brand CTAs typically do not also use a border; use color.fill.interactive.brand.* without a border. Do not use for static branded borders; use color.border.brand.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:78",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.8784313797950745,
+                  0.8784313797950745,
+                  0.8784313797950745
+                ],
+                "alpha": 1,
+                "hex": "#E0E0E0"
+              },
+              "$description": "Use as the hover-state border color for branded interactive elements that are outlined rather than filled. Applied when the user hovers over the element. Filled brand CTAs typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:79",
+                "com.figma.scopes": [
+                  "STROKE"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:7b9aa4161737c1840ee5af640bda9dbc60c92675/-1:-1",
+                  "targetVariableName": "felt/color/gray/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "focus": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.8784313797950745,
+                  0.8784313797950745,
+                  0.8784313797950745
+                ],
+                "alpha": 1,
+                "hex": "#E0E0E0"
+              },
+              "$description": "Use as the hover-state border color for branded interactive elements that are outlined rather than filled. Applied when the user hovers over the element. Filled brand CTAs typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:3054:512",
+                "com.figma.scopes": [
+                  "STROKE"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:7b9aa4161737c1840ee5af640bda9dbc60c92675/-1:-1",
+                  "targetVariableName": "felt/color/gray/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "selected": {
+              "$type": "color",
+              "$value": "{felt.color.brand.secondary}",
+              "$description": "Use as the selected-state border color for branded interactive elements that are outlined rather than filled. Applied when the element is selected or active. Filled brand CTAs typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:81",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            },
+            "pressed": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7803921699523926,
+                  0.7803921699523926,
+                  0.7803921699523926
+                ],
+                "alpha": 1,
+                "hex": "#C7C7C7"
+              },
+              "$description": "Use as the pressed-state border color for branded interactive elements that are outlined rather than filled. Applied while the user is pressing the element. Do not use for selected states; use color.border.interactive.brand.selected. Filled brand CTAs typically do not also use a border.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:80",
+                "com.figma.scopes": [
+                  "STROKE"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+                  "targetVariableName": "felt/color/gray/30",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            }
+          },
+          "control": {
+            "default": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7803921699523926,
+                  0.7803921699523926,
+                  0.7803921699523926
+                ],
+                "alpha": 1,
+                "hex": "#C7C7C7"
+              },
+              "$description": "Use as the default border color for control elements (e.g., text inputs, menu toggles, tiles). Pair with color.fill.interactive.control.default on typical controls. Toggle buttons are an exception: they may combine this control border with color.fill.interactive.subtle.*. Do not use for outlined action buttons; use color.border.interactive.default or color.border.interactive.subtle.* instead.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:82",
+                "com.figma.scopes": [
+                  "STROKE"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+                  "targetVariableName": "felt/color/gray/30",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{felt.color.border.interactive.subtle.hover}",
+              "$description": "Use as the hover-state border color for control elements (e.g., text inputs, menu toggles, tiles). Applied when the user hovers over the control. Pair with color.fill.interactive.control.default unless the control is read-only (color.fill.interactive.control.read-only). Toggle buttons may instead keep this control border with color.fill.interactive.subtle.hover.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:83",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            },
+            "selected": {
+              "$type": "color",
+              "$value": "{felt.color.border.interactive.selected}",
+              "$description": "Use as the selected-state border color for control elements (e.g., text inputs, menu toggles, tiles). Applied when the control is selected, focused, or active. Pair with color.fill.interactive.control.default unless the control is read-only. Toggle buttons may instead keep this control border with color.fill.interactive.subtle.selected.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:85",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            },
+            "pressed": {
+              "$type": "color",
+              "$value": "{felt.color.border.interactive.pressed}",
+              "$description": "Use as the pressed-state border color for control elements (e.g., text inputs, menu toggles, tiles). Applied while the user is pressing the control. Do not use for selected states; use color.border.interactive.control.selected.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:84",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            }
+          }
+        },
+        "status": {
+          "danger": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.danger}",
+              "$description": "Use as the default border color for elements conveying a danger status (e.g., alerts). Pair with color.icon.status.danger.default when that property is present. Do not use for interactive or static chrome borders.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:86",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            }
+          },
+          "warning": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.warning}",
+              "$description": "Use as the default border color for elements conveying a warning status (e.g., alerts). Pair with color.icon.status.warning.default when that property is present. Do not use for interactive or static chrome borders.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:90",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            }
+          },
+          "success": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.success}",
+              "$description": "Use as the default border color for elements conveying a success status (e.g., alerts). Pair with color.icon.status.success.default when that property is present. Do not use for interactive or static chrome borders.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:94",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            }
+          },
+          "info": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.info}",
+              "$description": "Use as the default border color for elements conveying an info status (e.g., alerts). Pair with color.icon.status.info.default when that property is present. Do not use for interactive or static chrome borders.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:98",
+                "com.figma.scopes": [
+                  "STROKE"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "text": {
+        "primary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1,
+            "hex": "#FFFFFF"
+          },
+          "$description": "Use as the default text color for standard text elements (e.g., body copy, headings). Icons paired directly with this text should inherit this color. Use color.icon.primary for standalone icons or when the icon must differ from the text color. Do not use for text on brand or primary interactive fills; use color.text.on-brand or color.text.on-interactive.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:102",
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1a4bfa26f5854427d366eaa601112407abca5176/-1:-1",
+              "targetVariableName": "felt/color/white",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7803921699523926,
+              0.7803921699523926,
+              0.7803921699523926
+            ],
+            "alpha": 1,
+            "hex": "#C7C7C7"
+          },
+          "$description": "Use as the text color for secondary or less prominent text (e.g., helper text, metadata). Icons paired directly with this text should inherit this color. Use color.icon.secondary for standalone icons or when the icon must differ from the text color. Do not use for primary body copy; use color.text.primary.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:103",
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+              "targetVariableName": "felt/color/gray/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.08235294371843338,
+              0.08235294371843338,
+              0.08235294371843338
+            ],
+            "alpha": 1,
+            "hex": "#151515"
+          },
+          "$description": "Use as the text color for text placed on inverse backgrounds to ensure legibility (e.g., dark bars in light mode). Icons paired directly with this text should inherit this color. Use color.icon.inverse for standalone icons or when the icon must differ from the text color. Do not use on brand fills; use color.text.on-brand. Do not use on primary interactive fills; use color.text.on-interactive.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:104",
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1f54b77a6682d27f9f31f7023ed3d621db8d1725/-1:-1",
+              "targetVariableName": "felt/color/gray/95",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "brand": {
+          "$type": "color",
+          "$value": "{felt.color.brand.primary}",
+          "$description": "Use as branded emphasis for text such as brand titles, data-viz numbers, or large expressive headings. Be aware of contrast requirements when applying brand color to text on backgrounds other than white or pure black. Icons paired directly with this text should inherit this color. Use color.icon.brand for standalone icons or when the icon must differ from the text color. Do not use for text sitting on a brand fill; use color.text.on-brand.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:105",
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ]
+          }
+        },
+        "on-brand": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 1,
+            "hex": "#000000"
+          },
+          "$description": "Use as the text color for text placed on a brand-colored background (e.g., branded CTA labels). Icons paired directly with this text should inherit this color. Use color.icon.on-brand for standalone icons or when the icon must differ from the text color. Do not use for branded text on a neutral surface; use color.text.brand.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:106",
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:a1993dcca88d0152fd1746fb9bff82f421e29477/-1:-1",
+              "targetVariableName": "felt/color/black",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "on-interactive": {
+          "$type": "color",
+          "$value": "{felt.color.text.inverse}",
+          "$description": "Use as the text color for text on elements with a primary interactive fill (e.g., primary button labels). Icons paired directly with this text should inherit this color. Use color.icon.on-interactive for standalone icons or when the icon must differ from the text color. Do not use for interactive text on a transparent or subtle fill; use color.text.interactive.* or color.text.interactive.subtle.*.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:107",
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ]
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.43921568989753723,
+              0.43921568989753723,
+              0.43921568989753723
+            ],
+            "alpha": 1,
+            "hex": "#707070"
+          },
+          "$description": "Use as the disabled text color for text that is not sitting on a disabled fill. For text on color.fill.disabled, use color.text.on-disabled instead. Icons paired directly with this text should inherit this color. Use color.icon.disabled for standalone icons or when the icon must differ from the text color.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:108",
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:b04ac3c62c4af2a89ce03eeadde41d3e064a3f72/-1:-1",
+              "targetVariableName": "felt/color/gray/50",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "on-disabled": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.12156862765550613,
+              0.12156862765550613,
+              0.12156862765550613
+            ],
+            "alpha": 1,
+            "hex": "#1F1F1F"
+          },
+          "$description": "Use as the text color for text sitting on color.fill.disabled backgrounds. Icons paired directly with this text should inherit this color. Use color.icon.on-disabled for standalone icons or when the icon must differ from the text color. Do not use for disabled text on a normal surface; use color.text.disabled.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:109",
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:58b598311f6e8afbf4fb12c20a9f113e7c29d5e7/-1:-1",
+              "targetVariableName": "felt/color/gray/90",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "interactive": {
+          "default": {
+            "$type": "color",
+            "$value": "{felt.color.interactive.primary}",
+            "$description": "Use as the default text color for primary interactive elements whose fill is not the primary interactive fill (e.g., secondary or ghost button labels). Icons paired directly with this text should inherit this color. Use color.icon.interactive.default for standalone icons or when the icon must differ from the text color. Ghost buttons and similar actions typically pair this with color.fill.interactive.subtle.*. For links, prefer color.text.interactive.link.default.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:114",
+              "com.figma.scopes": [
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7254902124404907,
+                0.8549019694328308,
+                0.9882352948188782
+              ],
+              "alpha": 1,
+              "hex": "#B9DAFC"
+            },
+            "$description": "Use as the hover-state text color for primary interactive elements (e.g., secondary or ghost button labels). Applied when the user hovers over the element. Icons paired directly with this text should inherit this color. Use color.icon.interactive.hover for standalone icons or when the icon must differ from the text color.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:115",
+              "com.figma.scopes": [
+                "TEXT_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                "targetVariableName": "felt/color/blue/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "focus": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7254902124404907,
+                0.8549019694328308,
+                0.9882352948188782
+              ],
+              "alpha": 1,
+              "hex": "#B9DAFC"
+            },
+            "$description": "Use as the hover-state text color for primary interactive elements (e.g., secondary or ghost button labels). Applied when the user hovers over the element. Icons paired directly with this text should inherit this color. Use color.icon.interactive.hover for standalone icons or when the icon must differ from the text color.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:3050:1821",
+              "com.figma.scopes": [
+                "TEXT_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                "targetVariableName": "felt/color/blue/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "selected": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8784313797950745,
+                0.9411764740943909,
+                1
+              ],
+              "alpha": 1,
+              "hex": "#E0F0FF"
+            },
+            "$description": "Use as the selected-state text color for primary interactive elements (e.g., secondary or ghost button labels). Applied when the element is selected or active. Icons paired directly with this text should inherit this color. Use color.icon.interactive.selected for standalone icons or when the icon must differ from the text color.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:117",
+              "com.figma.scopes": [
+                "TEXT_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                "targetVariableName": "felt/color/blue/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8784313797950745,
+                0.9411764740943909,
+                1
+              ],
+              "alpha": 1,
+              "hex": "#E0F0FF"
+            },
+            "$description": "Use as the pressed-state text color for primary interactive elements (e.g., secondary or ghost button labels). Applied while the user is pressing the element. Do not use for selected states; use color.text.interactive.selected. Icons paired directly with this text should inherit this color. Use color.icon.interactive.pressed for standalone icons or when the icon must differ from the text color.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:116",
+              "com.figma.scopes": [
+                "TEXT_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                "targetVariableName": "felt/color/blue/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.text.secondary}",
+              "$description": "Use as the default color for text paired with interactive elements that have a subtle background (e.g., navigation items, tabs, jump links). Icons paired directly with this text should inherit this color. Use color.icon.interactive.subtle.default for standalone icons or when the icon must differ from the text color. Pair with color.fill.interactive.subtle.default.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:118",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{felt.color.text.primary}",
+              "$description": "Use as the hover-state color for text paired with interactive elements that have a subtle background (e.g., navigation items, tabs, jump links). Applied when the user hovers over the element. Icons paired directly with this text should inherit this color. Use color.icon.interactive.subtle.hover for standalone icons or when the icon must differ from the text color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:119",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "pressed": {
+              "$type": "color",
+              "$value": "{felt.color.text.primary}",
+              "$description": "Use as the pressed-state color for text paired with interactive elements that have a subtle background (e.g., navigation items, tabs, jump links). Applied while the user is pressing the element. Do not use for selected states; use color.text.interactive.subtle.selected. Icons paired directly with this text should inherit this color. Use color.icon.interactive.subtle.* for standalone icons or when the icon must differ from the text color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:120",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "selected": {
+              "$type": "color",
+              "$value": "{felt.color.text.primary}",
+              "$description": "Use as the selected-state color for text paired with interactive elements that have a subtle background (e.g., navigation items, tabs, jump links). Icons paired directly with this text should inherit this color. Use color.icon.interactive.subtle.selected for standalone icons or when the icon must differ from the text color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:121",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          },
+          "link": {
+            "default": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.572549045085907,
+                  0.772549033164978,
+                  0.9764705896377563
+                ],
+                "alpha": 1,
+                "hex": "#92C5F9"
+              },
+              "$description": "Use as the default text color for inline links. Pair with color.text-decoration.default and text-decoration.link.* when the link is underlined. Do not use for button labels; use color.text.interactive.default or color.text.on-interactive.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2218:10",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:880841ec1abcda3a64a2e25e7ac64210e8923396/-1:-1",
+                  "targetVariableName": "felt/color/blue/30",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7254902124404907,
+                  0.8549019694328308,
+                  0.9882352948188782
+                ],
+                "alpha": 1,
+                "hex": "#B9DAFC"
+              },
+              "$description": "Use as the hover-state text color for inline links. Applied when the user hovers over the link. Pair with color.text-decoration.hover.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2292:299",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                  "targetVariableName": "felt/color/blue/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            },
+            "focus": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7254902124404907,
+                  0.8549019694328308,
+                  0.9882352948188782
+                ],
+                "alpha": 1,
+                "hex": "#B9DAFC"
+              },
+              "$description": "Use as the hover-state text color for inline links. Applied when the user hovers over the link. Pair with color.text-decoration.hover.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:3054:513",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                  "targetVariableName": "felt/color/blue/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            }
+          },
+          "control": {
+            "placeholder": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  1,
+                  1,
+                  1
+                ],
+                "alpha": 1,
+                "hex": "#FFFFFF"
+              },
+              "$description": "Use as the placeholder text color inside a control (e.g., text input, dropdown). Do not use for entered values; use color.text.primary. Do not use for required-field indicators; use color.text.interactive.control.required.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:122",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableName": "felt/color/brand/secondary"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "number",
+                    "value": 100
+                  }
+                }
+              }
+            },
+            "required": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9725490212440491,
+                  0.6078431606292725,
+                  0.47058823704719543
+                ],
+                "alpha": 1,
+                "hex": "#F89B78"
+              },
+              "$description": "Use as the required-indicator text color on a control (e.g., asterisks on text inputs or dropdowns). Do not use for placeholder or value text; use color.text.interactive.control.placeholder or color.text.primary.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:123",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:1ed033c76858de55e4188cbd0bae2a192ae95694/-1:-1",
+                  "targetVariableName": "felt/color/red-orange/30",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            }
+          }
+        },
+        "status": {
+          "danger": {
+            "default": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9725490212440491,
+                  0.6078431606292725,
+                  0.47058823704719543
+                ],
+                "alpha": 1,
+                "hex": "#F89B78"
+              },
+              "$description": "Use as the default color for text that communicates a danger status (e.g., error messages, destructive action labels). Icons paired directly with this text should inherit this color. Use color.icon.status.danger.default for standalone icons or when the icon must differ from the text color. Do not use for text sitting on a danger fill if contrast requires a different on-status color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:110",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:1ed033c76858de55e4188cbd0bae2a192ae95694/-1:-1",
+                  "targetVariableName": "felt/color/red-orange/30",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9843137264251709,
+                  0.7450980544090271,
+                  0.658823549747467
+                ],
+                "alpha": 1,
+                "hex": "#FBBEA8"
+              },
+              "$description": "Use as the hover-state color for text that communicates a danger status (e.g., hover on a destructive text button). Applied when the user hovers over the element. Icons paired directly with this text should inherit this color. Use color.icon.status.danger.default for standalone icons or when the icon must differ from the text color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:111",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:df4c842391a4f446aa16f417e96dcc3b9336f77f/-1:-1",
+                  "targetVariableName": "felt/color/red-orange/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            },
+            "pressed": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9843137264251709,
+                  0.7450980544090271,
+                  0.658823549747467
+                ],
+                "alpha": 1,
+                "hex": "#FBBEA8"
+              },
+              "$description": "Use as the pressed-state color for text that communicates a danger status. Applied while the user is pressing the element. Do not use for selected states; use color.text.status.danger.selected. Icons paired directly with this text should inherit this color. Use color.icon.status.danger.default for standalone icons or when the icon must differ from the text color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:112",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:df4c842391a4f446aa16f417e96dcc3b9336f77f/-1:-1",
+                  "targetVariableName": "felt/color/red-orange/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            },
+            "selected": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9843137264251709,
+                  0.7450980544090271,
+                  0.658823549747467
+                ],
+                "alpha": 1,
+                "hex": "#FBBEA8"
+              },
+              "$description": "Use as the selected-state color for text that communicates a danger status. Applied when the element is selected or active. Icons paired directly with this text should inherit this color. Use color.icon.status.danger.default for standalone icons or when the icon must differ from the text color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:113",
+                "com.figma.scopes": [
+                  "TEXT_FILL"
+                ],
+                "com.figma.aliasData": {
+                  "targetVariableId": "VariableID:df4c842391a4f446aa16f417e96dcc3b9336f77f/-1:-1",
+                  "targetVariableName": "felt/color/red-orange/20",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                },
+                "com.figma.isOverride": true
+              }
+            }
+          }
+        }
+      },
+      "icon": {
+        "primary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1,
+            "hex": "#FFFFFF"
+          },
+          "$description": "Use as the default color for icons. Icons paired directly with text should inherit the text color (typically color.text.primary); use this token for standalone icons or when the icon must differ from the text color. Do not use for icons on brand or primary interactive fills; use color.icon.on-brand or color.icon.on-interactive.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:48",
+            "com.figma.scopes": [
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1a4bfa26f5854427d366eaa601112407abca5176/-1:-1",
+              "targetVariableName": "felt/color/white",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7803921699523926,
+              0.7803921699523926,
+              0.7803921699523926
+            ],
+            "alpha": 1,
+            "hex": "#C7C7C7"
+          },
+          "$description": "Use as the color for icons that need less emphasis. Icons paired directly with text should inherit the text color (typically color.text.secondary); use this token for standalone icons or when the icon must differ from the text color. Do not use for primary icons; use color.icon.primary.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:49",
+            "com.figma.scopes": [
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+              "targetVariableName": "felt/color/gray/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.08235294371843338,
+              0.08235294371843338,
+              0.08235294371843338
+            ],
+            "alpha": 1,
+            "hex": "#151515"
+          },
+          "$description": "Use as the color for icons on inverse surfaces. Icons paired directly with text should inherit the text color (typically color.text.inverse); use this token for standalone icons or when the icon must differ from the text color. Do not use on brand fills; use color.icon.on-brand. Do not use on primary interactive fills; use color.icon.on-interactive.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:50",
+            "com.figma.scopes": [
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1f54b77a6682d27f9f31f7023ed3d621db8d1725/-1:-1",
+              "targetVariableName": "felt/color/gray/95",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "brand": {
+          "$type": "color",
+          "$value": "{felt.color.brand.primary}",
+          "$description": "Use as the color for static branded icons on a neutral surface (e.g., a brand mark in a header). Icons paired directly with text should inherit the text color (typically color.text.brand); use this token for standalone icons or when the icon must differ from the text color. Do not use for icons sitting on a brand fill; use color.icon.on-brand. Do not use for interactive icons; use color.icon.interactive.* or color.icon.interactive.subtle.* instead.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:51",
+            "com.figma.scopes": [
+              "SHAPE_FILL"
+            ]
+          }
+        },
+        "on-brand": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1,
+            "hex": "#FFFFFF"
+          },
+          "$description": "Use as the color for icons on a brand background (e.g., icons in branded CTAs). Icons paired directly with text should inherit the text color (typically color.text.on-brand); use this token for standalone icons or when the icon must differ from the text color. Do not use for branded icons on a neutral surface; use color.icon.brand.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:52",
+            "com.figma.scopes": [
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1a4bfa26f5854427d366eaa601112407abca5176/-1:-1",
+              "targetVariableName": "felt/color/white",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "on-interactive": {
+          "$type": "color",
+          "$value": "{felt.color.icon.inverse}",
+          "$description": "Use as the color for icons on a primary interactive fill (e.g., icons in primary buttons). Icons paired directly with text should inherit the text color (typically color.text.on-interactive); use this token for standalone icons or when the icon must differ from the text color. Do not use for icons in secondary or ghost buttons; use color.icon.interactive.*.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:53",
+            "com.figma.scopes": [
+              "SHAPE_FILL"
+            ]
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.43921568989753723,
+              0.43921568989753723,
+              0.43921568989753723
+            ],
+            "alpha": 1,
+            "hex": "#707070"
+          },
+          "$description": "Use as the color for disabled icons that are not sitting on a disabled fill. Icons paired directly with text should inherit the text color (typically color.text.disabled); use this token for standalone icons or when the icon must differ from the text color. For icons on color.fill.disabled, use color.icon.on-disabled.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:54",
+            "com.figma.scopes": [
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:b04ac3c62c4af2a89ce03eeadde41d3e064a3f72/-1:-1",
+              "targetVariableName": "felt/color/gray/50",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "on-disabled": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.21960784494876862,
+              0.21960784494876862,
+              0.21960784494876862
+            ],
+            "alpha": 1,
+            "hex": "#383838"
+          },
+          "$description": "Use as the color for icons sitting on color.fill.disabled backgrounds. Icons paired directly with text should inherit the text color (typically color.text.on-disabled); use this token for standalone icons or when the icon must differ from the text color. Do not use for disabled icons on a normal surface; use color.icon.disabled.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:55",
+            "com.figma.scopes": [
+              "SHAPE_FILL"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:1b1af12df599a328c995774db91978839f90f5cc/-1:-1",
+              "targetVariableName": "felt/color/gray/70",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "interactive": {
+          "default": {
+            "$type": "color",
+            "$value": "{felt.color.interactive.primary}",
+            "$description": "Use as the default icon color for primary interactive elements whose fill is not the primary interactive fill (e.g., icons in secondary or ghost buttons). Icons paired directly with text should inherit the text color (typically color.text.interactive.default); use this token for standalone icons or when the icon must differ from the text color. Ghost buttons and similar actions typically pair this with color.fill.interactive.subtle.*.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:56",
+              "com.figma.scopes": [
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7254902124404907,
+                0.8549019694328308,
+                0.9882352948188782
+              ],
+              "alpha": 1,
+              "hex": "#B9DAFC"
+            },
+            "$description": "Use as the hover-state icon color for primary interactive elements (e.g., icons in secondary or ghost buttons). Applied when the user hovers over the element. Icons paired directly with text should inherit the text color (typically color.text.interactive.hover); use this token for standalone icons or when the icon must differ from the text color.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:57",
+              "com.figma.scopes": [
+                "SHAPE_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                "targetVariableName": "felt/color/blue/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "focus": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7254902124404907,
+                0.8549019694328308,
+                0.9882352948188782
+              ],
+              "alpha": 1,
+              "hex": "#B9DAFC"
+            },
+            "$description": "Use as the hover-state icon color for primary interactive elements (e.g., icons in secondary or ghost buttons). Applied when the user hovers over the element. Icons paired directly with text should inherit the text color (typically color.text.interactive.hover); use this token for standalone icons or when the icon must differ from the text color.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:3050:1820",
+              "com.figma.scopes": [
+                "SHAPE_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:15a0233bd6eb6b5cb4e8ba99f8cd05a0d6dacdd8/-1:-1",
+                "targetVariableName": "felt/color/blue/20",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "selected": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8784313797950745,
+                0.9411764740943909,
+                1
+              ],
+              "alpha": 1,
+              "hex": "#E0F0FF"
+            },
+            "$description": "Use as the selected-state icon color for primary interactive elements (e.g., icons in secondary or ghost buttons). Applied when the element is selected or active. Icons paired directly with text should inherit the text color (typically color.text.interactive.selected); use this token for standalone icons or when the icon must differ from the text color.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:59",
+              "com.figma.scopes": [
+                "SHAPE_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                "targetVariableName": "felt/color/blue/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8784313797950745,
+                0.9411764740943909,
+                1
+              ],
+              "alpha": 1,
+              "hex": "#E0F0FF"
+            },
+            "$description": "Use as the pressed-state icon color for primary interactive elements (e.g., icons in secondary or ghost buttons). Applied while the user is pressing the element. Do not use for selected states; use color.icon.interactive.selected. Icons paired directly with text should inherit the text color (typically color.text.interactive.pressed); use this token for standalone icons or when the icon must differ from the text color.",
+            "$extensions": {
+              "com.figma.variableId": "VariableID:2136:58",
+              "com.figma.scopes": [
+                "SHAPE_FILL"
+              ],
+              "com.figma.aliasData": {
+                "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                "targetVariableName": "felt/color/blue/10",
+                "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                "targetVariableSetName": "Primitives"
+              }
+            }
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.7803921699523926,
+                  0.7803921699523926,
+                  0.7803921699523926
+                ],
+                "alpha": 1,
+                "hex": "#C7C7C7"
+              },
+              "$description": "Use as the default color for icons on interactive elements that have subtle backgrounds (e.g., navigation items, tabs, jump links). Icons paired directly with text should inherit the text color (typically color.text.interactive.subtle.default); use this token for standalone icons or when the icon must differ from the text color. Pair with color.fill.interactive.subtle.default.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:60",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableName": "felt/color/icon/secondary"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "number",
+                    "value": 100
+                  }
+                }
+              }
+            },
+            "hover": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  1,
+                  1,
+                  1
+                ],
+                "alpha": 1,
+                "hex": "#FFFFFF"
+              },
+              "$description": "Use as the hover-state color for icons on interactive elements that have subtle backgrounds (e.g., navigation items, tabs, jump links). Applied when the user hovers over the element. Icons paired directly with text should inherit the text color (typically color.text.interactive.subtle.hover); use this token for standalone icons or when the icon must differ from the text color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:61",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableName": "felt/color/icon/primary"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "number",
+                    "value": 100
+                  }
+                }
+              }
+            },
+            "focus": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  1,
+                  1,
+                  1
+                ],
+                "alpha": 1,
+                "hex": "#FFFFFF"
+              },
+              "$description": "Use as the focus-state color for icons on interactive elements that have subtle backgrounds (e.g., navigation items, tabs, jump links). Applied when the user moves focus to the element. Icons paired directly with text should inherit the text color (typically color.text.interactive.subtle.hover); use this token for standalone icons or when the icon must differ from the text color.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:3050:1815",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableName": "felt/color/icon/primary"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "number",
+                    "value": 100
+                  }
+                }
+              }
+            },
+            "selected": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  1,
+                  1,
+                  1
+                ],
+                "alpha": 1,
+                "hex": "#FFFFFF"
+              },
+              "$description": "Use as the selected-state color for icons on interactive elements that have subtle backgrounds (e.g., navigation items, tabs, jump links). Icons paired directly with text should inherit the text color (typically color.text.interactive.subtle.selected); use this token for standalone icons or when the icon must differ from the text color. Pair with color.fill.interactive.subtle.selected.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:62",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableName": "felt/color/icon/primary"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "number",
+                    "value": 100
+                  }
+                }
+              }
+            },
+            "pressed": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.8784313797950745,
+                  0.9411764740943909,
+                  1
+                ],
+                "alpha": 1,
+                "hex": "#E0F0FF"
+              },
+              "$description": "Use as the selected-state color for icons on interactive elements that have subtle backgrounds (e.g., navigation items, tabs, jump links). Icons paired directly with text should inherit the text color (typically color.text.interactive.subtle.selected); use this token for standalone icons or when the icon must differ from the text color. Pair with color.fill.interactive.subtle.selected.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:3050:1814",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ],
+                "com.figma.composedColor": {
+                  "colorArg": {
+                    "type": "alias",
+                    "alias": {
+                      "targetVariableId": "VariableID:83ec4cd88ea8f16967b30eb74ddd07c940a8b350/-1:-1",
+                      "targetVariableName": "felt/color/blue/10",
+                      "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                      "targetVariableSetName": "Primitives"
+                    }
+                  },
+                  "opacityArg": {
+                    "type": "number",
+                    "value": 100
+                  }
+                }
+              }
+            }
+          }
+        },
+        "status": {
+          "danger": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.danger}",
+              "$description": "Use as the default color for icons that communicate a danger status (e.g., alerts). Icons paired directly with this text should inherit the text color (typically color.text.status.danger.default); use this token for standalone icons or when the icon must differ from the text color. Do not use the parent color.status.danger token.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:63",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          },
+          "warning": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.warning}",
+              "$description": "Use as the default color for icons that communicate a warning status (e.g., alerts). Pair with color.border.status.warning.default when that property is present.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:64",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          },
+          "success": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.success}",
+              "$description": "Use as the default color for icons that communicate a success status (e.g., alerts). Pair with color.border.status.success.default when that property is present. Do not use the parent color.status.success token.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:65",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          },
+          "info": {
+            "default": {
+              "$type": "color",
+              "$value": "{felt.color.status.info}",
+              "$description": "Use as the default color for icons that communicate an info status (e.g., alerts). Pair with color.border.status.info.default when that property is present.",
+              "$extensions": {
+                "com.figma.variableId": "VariableID:2136:66",
+                "com.figma.scopes": [
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "text-decoration": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7803921699523926,
+              0.7803921699523926,
+              0.7803921699523926
+            ],
+            "alpha": 1,
+            "hex": "#C7C7C7"
+          },
+          "$description": "Use as the default color for text decorations (e.g., underlined links, term help). Pair with color.text.interactive.link.default and text-decoration.link.line, text-decoration.link.style, and text-decoration.link.offset. Do not use this token as the text fill itself.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2292:297",
+            "com.figma.scopes": [
+              "TEXT_FILL",
+              "STROKE"
+            ],
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:d8c89d1a734bd5b55680b1f2910bcd8c7c576b5f/-1:-1",
+              "targetVariableName": "felt/color/gray/30",
+              "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+              "targetVariableSetName": "Primitives"
+            },
+            "com.figma.isOverride": true
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{felt.color.text.interactive.link.hover}",
+          "$description": "Use as the hover-state color for text decorations (e.g., underlined links, term help). Applied when the user hovers over the decorated text. Pair with color.text.interactive.link.hover.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2292:298",
+            "com.figma.scopes": [
+              "TEXT_FILL",
+              "STROKE"
+            ]
+          }
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{felt.color.text.interactive.link.hover}",
+          "$description": "Use as the hover-state color for text decorations (e.g., underlined links, term help). Applied when the user hovers over the decorated text. Pair with color.text.interactive.link.hover.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:3054:514",
+            "com.figma.scopes": [
+              "TEXT_FILL",
+              "STROKE"
+            ]
+          }
+        }
+      },
+      "shadow": {
+        "md": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.08235294371843338,
+              0.08235294371843338,
+              0.08235294371843338
+            ],
+            "alpha": 0.4000000059604645,
+            "hex": "#151515"
+          },
+          "$description": "Use as the color of medium box-shadows on raised or floating surfaces (e.g., menus, modals, cards that lift). Do not use as a fill, text, or border color. Pair with color.surface.floating when the surface is an overlay.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:2136:124",
+            "com.figma.scopes": [
+              "EFFECT_COLOR"
+            ],
+            "com.figma.composedColor": {
+              "colorArg": {
+                "type": "alias",
+                "alias": {
+                  "targetVariableId": "VariableID:1f54b77a6682d27f9f31f7023ed3d621db8d1725/-1:-1",
+                  "targetVariableName": "felt/color/gray/95",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              },
+              "opacityArg": {
+                "type": "alias",
+                "alias": {
+                  "targetVariableId": "VariableID:b421415ffca6dea5125cd8a6ee84f069c2ca661d/-1:-1",
+                  "targetVariableName": "felt/opacity/40",
+                  "targetVariableSetId": "VariableCollectionId:4480e1be086ee31a576e07093e9bcefb259ac2e0/-1:-1",
+                  "targetVariableSetName": "Primitives"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Dark",
+    "com.figma.parentVariableSetId": "VariableCollectionId:3:104",
+    "com.figma.parentVariableSetName": "Semantic colors"
+  }
+}
