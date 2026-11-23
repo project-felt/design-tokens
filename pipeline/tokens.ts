@@ -423,22 +423,67 @@ export function rawValue(path: string[], value: unknown, type?: string): string 
   return JSON.stringify(value) ?? '';
 }
 
-const referenceName = (token: Token, index: TokenIndex, reference: string): string => {
+export type CssValueOptions = {
+  /**
+   * Rewrites a referenced custom-property name. Namespaced planes use this to
+   * point references at their own plane-specific definitions.
+   */
+  reference?: (name: string) => string;
+};
+
+const referenceName = (
+  token: Token,
+  index: TokenIndex,
+  reference: string,
+  rewrite?: (name: string) => string,
+): string => {
   const path = toPath(reference);
   if (!index.knownPaths.has(tokenKey(path))) {
     throw new Error(`${token.file}:${token.line} ${token.key}: unknown reference "${reference}"`);
   }
-  return `var(--${cssName(path)})`;
+  const name = cssName(path);
+  return `var(--${rewrite ? rewrite(name) : name})`;
 };
+
+/**
+ * Collects the logical paths a token references, regardless of whether the
+ * reference is a DTCG reference, a Figma alias, or a composed color argument.
+ * @param token - Indexed token.
+ * @returns Referenced variable names in Figma slash form.
+ */
+export function tokenReferences(token: Token): string[] {
+  const composition = composed(token.token);
+  if (composition) {
+    const references: string[] = [];
+    if (composition.colorArg?.type === 'alias') {
+      references.push(composition.colorArg.alias.targetVariableName);
+    }
+    if (composition.opacityArg?.type === 'alias') {
+      references.push(composition.opacityArg.alias.targetVariableName);
+    }
+    return references;
+  }
+  const reference = dtcgReference(token.token);
+  if (reference) return [reference];
+  const alias = aliasTarget(token.token);
+  if (alias) return [alias];
+  return [];
+}
 
 /**
  * Resolves a token to CSS using references only. Primitives emit raw values;
  * every semantic token must terminate at a primitive.
  * @param token - Indexed token.
  * @param index - Token index.
+ * @param options - Optional reference rewriting for namespaced planes.
  * @returns CSS value text.
  */
-export function cssValue(token: Token, index: TokenIndex): string {
+export function cssValue(
+  token: Token,
+  index: TokenIndex,
+  options?: CssValueOptions,
+): string {
+  const rewrite = options?.reference;
   if (token.isPrimitive) return rawValue(token.path, token.token.$value, token.token.$type);
 
   const composition = composed(token.token);
@@ -449,10 +494,15 @@ export function cssValue(token: Token, index: TokenIndex): string {
         `${token.file}:${token.line} ${token.key}: composedColor colorArg must be an alias`,
       );
     }
-    const colorRef = referenceName(token, index, colorArg.alias.targetVariableName);
+    const colorRef = referenceName(token, index, colorArg.alias.targetVariableName, rewrite);
     const opacityArg = composition.opacityArg;
     if (opacityArg?.type === 'alias') {
-      const opacityRef = referenceName(token, index, opacityArg.alias.targetVariableName);
+      const opacityRef = referenceName(
+        token,
+        index,
+        opacityArg.alias.targetVariableName,
+        rewrite,
+      );
       return `color-mix(in srgb, ${colorRef} calc(${opacityRef} * 1%), transparent)`;
     }
     const opacity = Number(opacityArg?.value);
@@ -464,10 +514,10 @@ export function cssValue(token: Token, index: TokenIndex): string {
   }
 
   const reference = dtcgReference(token.token);
-  if (reference) return referenceName(token, index, reference);
+  if (reference) return referenceName(token, index, reference, rewrite);
 
   const alias = aliasTarget(token.token);
-  if (alias) return referenceName(token, index, alias);
+  if (alias) return referenceName(token, index, alias, rewrite);
 
   if (isColor(token.token)) {
     throw new Error(
