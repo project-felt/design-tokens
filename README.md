@@ -140,6 +140,13 @@ Each mode and density also has a `-namespaced` file. Those files declare
 plane-namespaced properties (`--felt-mode-*`, `--felt-density-*`) instead of overriding
 the base names, so consumers opt in explicitly and can compose them.
 
+Density namespaced files emit the complete density-sensitive set: every token either
+density overrides, plus every token that aliases one (for example
+`space.interactive.horizontal.action` → `space.fluid.lg`). Their references point at
+`--felt-density-*` targets, so a scoped density resolves entirely through its own plane
+and never falls back to Default. There is no Default namespaced block; without a
+`data-felt-density` attribute components use the base tokens.
+
 ## Token values are references
 
 Primitives are the only tokens with literal values. Semantic and mode tokens are

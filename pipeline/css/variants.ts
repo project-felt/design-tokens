@@ -15,7 +15,10 @@ import {
   findToken,
   isFigmaOnly,
   tokenKey,
+  tokenReferences,
   tokenSignature,
+  toPath,
+  type CollectionMode,
   type Token,
   type TokenIndex,
 } from '../tokens.js';
@@ -231,40 +234,135 @@ function buildMode(
 }
 
 /**
- * Builds one density file containing only tokens that differ from the base
+ * Returns the token keys whose value differs between a density and the base
  * density.
- * @param density - Density configuration.
- * @param baseMode - Base collection mode name.
- * @param index - Token index.
- * @param namespace - Optional namespace for the emitted custom properties.
- * @returns Number of emitted token paths.
+ * @param mode - Density collection mode.
+ * @param base - Base density collection mode.
+ * @returns Changed token keys.
  */
-function buildDensity(
-  density: Density,
-  baseMode: string,
-  index: TokenIndex,
-  namespace?: string,
-): number {
-  const base = index.collections.get(collectionKey(density.collection, baseMode));
-  const mode = index.collections.get(collectionKey(density.collection, density.source.name));
-  if (!base || !mode) {
-    throw new Error(`Missing tokens for density "${density.name}"`);
-  }
-
-  const lines: string[] = [];
+function densityOverrides(mode: CollectionMode, base: CollectionMode): Set<string> {
+  const overrides = new Set<string>();
   for (const token of mode.tokens) {
     if (isFigmaOnly(token.path)) continue;
     const baseToken = base.byPath.get(token.key);
     if (baseToken && tokenSignature(baseToken) === tokenSignature(token)) continue;
-    lines.push(
-      `    --${variantName(cssName(token.path), namespace)}: ${cssValue(token, index)};`,
-    );
+    overrides.add(token.key);
+  }
+  return overrides;
+}
+
+/**
+ * Expands density overrides with every token that transitively aliases one.
+ * A token such as `space.interactive.horizontal.action` keeps the same
+ * reference in every density, so it never appears as a direct override, yet it
+ * still resolves to a density-sensitive value. The namespaced plane needs the
+ * complete closure because it cannot rely on the base tokens being redefined.
+ * @param seed - Directly overridden token keys.
+ * @param sources - Collections to search for referencing tokens.
+ * @returns Complete density-sensitive token key set.
+ */
+function expandDensityClosure(
+  seed: Set<string>,
+  sources: CollectionMode[],
+): Set<string> {
+  const tokens = new Map<string, Token>();
+  for (const source of sources) {
+    for (const token of source.tokens) {
+      if (!tokens.has(token.key)) tokens.set(token.key, token);
+    }
   }
 
+  const closure = new Set(seed);
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const [key, token] of tokens) {
+      if (closure.has(key) || isFigmaOnly(token.path)) continue;
+      const references = tokenReferences(token);
+      if (references.some((reference) => closure.has(tokenKey(toPath(reference))))) {
+        closure.add(key);
+        changed = true;
+      }
+    }
+  }
+  return closure;
+}
+
+/**
+ * Creates a reference rewriter that points namespaced-plane references at their
+ * own definitions. References outside the density closure stay on the base
+ * plane, which every density shares.
+ * @param closure - Density-sensitive token keys.
+ * @param namespace - Plane namespace.
+ * @returns Rewrite function for referenced custom-property names.
+ */
+function closureReference(
+  closure: Set<string>,
+  namespace: string,
+): (name: string) => string {
+  const names = new Set([...closure].map((key) => cssName(key.split('.'))));
+  return (name) => (names.has(name) ? variantName(name, namespace) : name);
+}
+
+/**
+ * Builds one density file pair. The non-namespaced file contains only direct
+ * overrides because it redefines the referenced base tokens in the same block.
+ * The namespaced file emits the whole density closure so every density-sensitive
+ * `--felt-density-*` key exists and resolves through the namespace.
+ * @param density - Density configuration.
+ * @param base - Base density collection mode.
+ * @param mode - Density collection mode.
+ * @param closure - Density-sensitive token keys shared by every density.
+ * @param index - Token index.
+ * @returns Emitted token counts for the plain and namespaced planes.
+ */
+function buildDensity(
+  density: Density,
+  base: CollectionMode,
+  mode: CollectionMode,
+  closure: Set<string>,
+  index: TokenIndex,
+): { plain: number; namespaced: number } {
+  const orderedTokens = (keys: Set<string>): Token[] => {
+    const result: Token[] = [];
+    const seen = new Set<string>();
+    const push = (token: Token): void => {
+      if (!keys.has(token.key) || isFigmaOnly(token.path) || seen.has(token.key)) return;
+      seen.add(token.key);
+      result.push(token);
+    };
+    for (const token of mode.tokens) push(token);
+    for (const token of base.tokens) push(token);
+    return result;
+  };
+
+  const declarations = (
+    keys: Set<string>,
+    namespace?: string,
+    reference?: (name: string) => string,
+  ): string[] =>
+    orderedTokens(keys).map(
+      (token) =>
+        `    --${variantName(cssName(token.path), namespace)}: ${cssValue(token, index, {
+          reference,
+        })};`,
+    );
+
   const selector = `[data-felt-density="${density.name}"]`;
-  const body = `@layer density {\n  ${selector} {\n${lines.join('\n')}\n  }\n}`;
-  writeVariant(`density/${density.name}${namespace ? '-namespaced' : ''}.css`, body);
-  return lines.length;
+
+  const plain = declarations(densityOverrides(mode, base));
+  writeVariant(
+    `density/${density.name}.css`,
+    `@layer density {\n  ${selector} {\n${plain.join('\n')}\n  }\n}`,
+  );
+
+  const namespaced = declarations(closure, 'density', closureReference(closure, 'density'));
+  writeVariant(
+    `density/${density.name}-namespaced.css`,
+    `@layer density {\n  ${selector} {\n${namespaced.join('\n')}\n  }\n}`,
+  );
+
+  return { plain: plain.length, namespaced: namespaced.length };
 }
 
 /**
@@ -287,19 +385,52 @@ export function emitVariants(
     modes[`${mode.name}-namespaced`] = buildMode(mode, index, densityByMode, 'mode');
   }
 
+  const baseModeFor = (collection: string): string => {
+    const source = config.base.find((entry) => entry.name === collection);
+    if (!source) throw new Error(`Density source "${collection}" is not a base collection`);
+    const baseMode = source.sources[0]?.name;
+    if (!baseMode) throw new Error(`Density source "${collection}" has no base mode`);
+    return baseMode;
+  };
+
+  const collectionMode = (collection: string, mode: string): CollectionMode => {
+    const entry = index.collections.get(collectionKey(collection, mode));
+    if (!entry) throw new Error(`Missing tokens for ${collection}/${mode}`);
+    return entry;
+  };
+
+  // Every density namespaced plane shares the union of what either density
+  // overrides, plus everything that aliases those tokens, so the key set is
+  // stable across density values.
+  const clusters = new Map<string, Density[]>();
+  for (const density of config.densities) {
+    const entries = clusters.get(density.collection) ?? [];
+    entries.push(density);
+    clusters.set(density.collection, entries);
+  }
+
+  const closures = new Map<string, Set<string>>();
+  for (const [collection, entries] of clusters) {
+    const base = collectionMode(collection, baseModeFor(collection));
+    const sources: CollectionMode[] = [base];
+    const seed = new Set<string>();
+    for (const density of entries) {
+      const mode = collectionMode(collection, density.source.name);
+      sources.push(mode);
+      for (const key of densityOverrides(mode, base)) seed.add(key);
+    }
+    closures.set(collection, expandDensityClosure(seed, sources));
+  }
+
   const densities: Record<string, number> = {};
   for (const density of config.densities) {
-    const source = config.base.find((entry) => entry.name === density.collection);
-    if (!source) throw new Error(`Density source "${density.collection}" is not a base collection`);
-    const baseMode = source.sources[0]?.name;
-    if (!baseMode) throw new Error(`Density source "${density.collection}" has no base mode`);
-    densities[density.name] = buildDensity(density, baseMode, index);
-    densities[`${density.name}-namespaced`] = buildDensity(
-      density,
-      baseMode,
-      index,
-      'density',
-    );
+    const base = collectionMode(density.collection, baseModeFor(density.collection));
+    const mode = collectionMode(density.collection, density.source.name);
+    const closure = closures.get(density.collection);
+    if (!closure) throw new Error(`Missing density closure for "${density.collection}"`);
+    const counts = buildDensity(density, base, mode, closure, index);
+    densities[density.name] = counts.plain;
+    densities[`${density.name}-namespaced`] = counts.namespaced;
   }
 
   return { modes, densities };
