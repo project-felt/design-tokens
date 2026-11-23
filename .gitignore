@@ -2,4 +2,6 @@ node_modules/
 dist/
 .wireit/
 pipeline/**/*.js
+figma-api/**/*.js
+bin/**/*.js
 .DS_Store

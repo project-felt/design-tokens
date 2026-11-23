@@ -1,0 +1,18 @@
+{
+  "files": [
+    "Glass colors/Dark.tokens.json",
+    "Glass colors/Light.tokens.json",
+    "High contrast colors/Dark.tokens.json",
+    "High contrast colors/Light.tokens.json",
+    "High contrast units/Compact.tokens.json",
+    "High contrast units/Default.tokens.json",
+    "High contrast units/Spacious.tokens.json",
+    "Primitives/Value.tokens.json",
+    "Semantic colors/Dark.tokens.json",
+    "Semantic colors/Light.tokens.json",
+    "Semantic motion/Mode 1.tokens.json",
+    "Semantic units/Compact.tokens.json",
+    "Semantic units/Default.tokens.json",
+    "Semantic units/Spacious.tokens.json"
+  ]
+}

@@ -8,6 +8,6 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["pipeline/**/*.ts"],
+  "include": ["pipeline/**/*.ts", "figma-api/**/*.ts", "bin/**/*.ts"],
   "exclude": ["build", "dist"]
 }

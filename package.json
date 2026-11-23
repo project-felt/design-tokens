@@ -4,12 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "wireit"
+    "build": "wireit",
+    "compile": "wireit",
+    "typecheck": "wireit",
+    "export": "npm run compile && node bin/figma-variables-to-dtcg.js",
+    "test": "npm run compile && node --test test/*.js"
   },
   "dependencies": {
     "style-dictionary": "^5.5.3"
   },
   "devDependencies": {
+    "@figma/rest-api-spec": "^0.47.0",
     "@types/node": "^26.6.0",
     "typescript": "^7.0.2",
     "wireit": "^0.14.13",
@@ -20,6 +25,8 @@
       "command": "tsc --noEmit",
       "files": [
         "pipeline/**/*.ts",
+        "figma-api/**/*.ts",
+        "bin/**/*.ts",
         "tsconfig.json"
       ],
       "output": []
@@ -28,10 +35,14 @@
       "command": "tsc",
       "files": [
         "pipeline/**/*.ts",
+        "figma-api/**/*.ts",
+        "bin/**/*.ts",
         "tsconfig.json"
       ],
       "output": [
-        "pipeline/**/*.js"
+        "pipeline/**/*.js",
+        "figma-api/**/*.js",
+        "bin/**/*.js"
       ]
     },
     "generate": {

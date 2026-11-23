@@ -214,3 +214,57 @@ pipeline/
 
 `sd.config.js` orchestrates the build. Generated CSS should not be edited directly;
 update the Figma export or `tokens.config.yaml` and rebuild.
+
+## Import variables from figma and export as JSON
+
+Set your Figma token and file key (the identifier in the Figma file URL), then run the exporter:
+
+```sh
+export FIGMA_TOKEN="your-figma-token"
+export FIGMA_FILE_KEY="your-file-key"
+
+npm run export -- --output "./tokens/figma"
+```
+
+`npm run export` compiles the TypeScript sources first, then runs `node bin/figma-variables-to-dtcg.js`. The compiled JavaScript is generated output and is not committed.
+
+The exporter writes one file per local collection and mode:
+
+```text
+tokens/figma/<collection>/<mode>.tokens.json
+```
+
+The exporter sources live in `figma-api/`: `figma-to-dtcg.ts` fetches and converts variables, `write-exports.ts` stages and prunes the output files. Both are TypeScript and compile to JavaScript next to the source (`npm run compile`); the compiled files are not committed.
+
+Remote library collections, the `Figma-only` collection, and variables with `figma-only` anywhere in their name are excluded.
+
+### Options
+
+| Option | Description |
+| --- | --- |
+| `--output DIR` | Required output directory. |
+| `--mode MODE` | Export only modes matching this name or ID. Defaults to all modes. |
+| `--file FILE_KEY` | Override `FIGMA_FILE_KEY`. |
+| `--token TOKEN` | Override `FIGMA_TOKEN`. Prefer the environment variable to avoid exposing the token in process arguments. |
+| `--token-type personal\|oauth` | Token type. Defaults to `personal`; also configurable with `FIGMA_TOKEN_TYPE`. |
+
+Full exports update generated files and remove obsolete files tracked by `.figma-variables-export.json`. Exports using `--mode` leave other modes in place. Files not tracked by the manifest are not removed.
+
+## JSON format
+
+- Variable names separated by `/` become nested token groups. Tokens use `$type` and `$value`, with descriptions and Figma metadata where available. Group and token names are sorted alphabetically so repeated exports produce stable diffs.
+- Aliases to other exported tokens in the same collection remain token references; other aliases resolve to values.
+- Length-scoped numbers export as `dimension` values in pixels. Other numbers, including opacity, font weight, z-index, and proportional line height, remain unitless.
+- `felt/duration/*` and `felt/motion/duration/*` values are treated as seconds and exported as `duration` values in milliseconds. Ensure the source values use seconds.
+- `felt/easing/*` and `felt/motion/easing/*` values export as `cubicBezier` arrays. Other duration or easing names need an explicit mapping in the exporter.
+- Composed colors resolve the selected mode and its overrides, matching Figma's displayed color.
+
+Invalid or duplicate token paths, missing values, unresolved aliases, and circular references cause the export to fail rather than write incomplete tokens.
+
+## Tests
+
+```sh
+npm test
+```
+
+Tests run against the compiled JavaScript, so `npm test` compiles the TypeScript sources first.
